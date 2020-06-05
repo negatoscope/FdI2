@@ -5,7 +5,7 @@ Yo! You can label chapter and section titles using `{#label}` after them, e.g., 
 Let´s see if I can open a Shiny App
 
 ```{r}
-knitr::include_url('http://ec2-3-15-183-89.us-east-2.compute.amazonaws.com/shiny_test/', height = "600px")
+knitr::include_url('http://ec2-3-15-183-89.us-east-2.compute.amazonaws.com:3838/shiny_test/', height = "600px")
 ```
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 

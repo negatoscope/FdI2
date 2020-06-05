@@ -47,6 +47,9 @@ sudo gdebi shiny-server-1.5.13.944-amd64.deb
 # go to shiny-server
 cd /srv/shiny-server
 
+# remove folder if repeated
+sudo rm -r shiny_test
+
 # move shiny app from home to shiny server folder
 sudo mv ~/shiny_test .
 
@@ -55,3 +58,9 @@ sudo nano /etc/shiny-server/shiny-server.conf
 
 # restart shiny-server to open changes
 sudo systemctl restart shiny-server
+
+# in case of error go to logs
+cd /var/log/shiny-server/
+
+# open log file
+sudo nano *.log
