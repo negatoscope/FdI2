@@ -1,8 +1,15 @@
-### INSTRUCTIONS ON HOW TO INSTALL SHINY SERVER WITH AWS
+### INSTRUCTIONS ON HOW TO INSTALL SHINY SERVER WITH AWS 
 
-# Requirements: EC2 instance (ubuntu with open tpt, http, https)
+taken from
+https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04#step-3-%E2%80%94-securing-shiny-server-with-a-reverse-proxy-and-ssl-certificate
+https://www.youtube.com/watch?v=0h9VOQZX6QM&list=LLS2BhH_w5pjDqHQaj-_hJsQ&index=4&t=1s
+https://www.youtube.com/watch?v=koDhIrfx4H0
 
-## LOCAL
+# Requirements: 
+    - EC2 instance (ubuntu with open tpt, http, https)
+    - a DNS www.yourwebsite and yourwebsite domain (got mine from cloudns)
+
+## LOCAL: BOOT SERVER WITH CUSTOM NAME
 # move downloaded key from AWS so ssh folder
 mv ~/Downloads/shiny-key.pem .ssh/.
 
@@ -24,26 +31,11 @@ HOST shiny
 # start server
 ssh shiny
 
+## LOCAL
 # upload shiny folder to home in server
-scp -r shiny_test shiny:/home/ubuntu/.
+scp -r Desktop/FdI2/docs/shiny_test shiny:/home/ubuntu/.
 
 ##REMOTE
-
-#update os if fresh install
-sudo apt-get update
-
-# install r
-sudo apt-get install r-base
-
-# install shiny
-sudo su - \
--c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/')\""
-
-# install shiny-server
-sudo apt-get install gdebi-core
-wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.13.944-amd64.deb
-sudo gdebi shiny-server-1.5.13.944-amd64.deb
-
 # go to shiny-server
 cd /srv/shiny-server
 
@@ -52,9 +44,6 @@ sudo rm -r shiny_test
 
 # move shiny app from home to shiny server folder
 sudo mv ~/shiny_test .
-
-# open shiny-server config file to change port to 80 
-sudo nano /etc/shiny-server/shiny-server.conf
 
 # restart shiny-server to open changes
 sudo systemctl restart shiny-server
