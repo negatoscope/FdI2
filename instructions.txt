@@ -2,6 +2,7 @@
 
 taken from
 https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04#step-3-%E2%80%94-securing-shiny-server-with-a-reverse-proxy-and-ssl-certificate
+https://www.charlesbordet.com/en/guide-shiny-aws/#7-extra-protect-your-app-with-a-password
 https://www.youtube.com/watch?v=0h9VOQZX6QM&list=LLS2BhH_w5pjDqHQaj-_hJsQ&index=4&t=1s
 https://www.youtube.com/watch?v=koDhIrfx4H0
 
@@ -34,6 +35,8 @@ ssh shiny
 ## LOCAL
 # upload shiny folder to home in server
 scp -r Desktop/FdI2/docs/shiny_test shiny:/home/ubuntu/.
+scp -r Desktop/FdI2/docs/distributions shiny:/home/ubuntu/.
+scp -r Desktop/website/palettR shiny:/home/ubuntu/.
 
 ##REMOTE
 # go to shiny-server
@@ -41,9 +44,11 @@ cd /srv/shiny-server
 
 # remove folder if repeated
 sudo rm -r shiny_test
+sudo rm -r palettR
 
 # move shiny app from home to shiny server folder
 sudo mv ~/shiny_test .
+sudo mv ~/palettR .
 
 # restart shiny-server to open changes
 sudo systemctl restart shiny-server
