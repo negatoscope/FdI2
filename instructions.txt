@@ -53,3 +53,29 @@ cd /var/log/shiny-server/
 
 # open log file
 sudo nano *.log
+
+# file content 3838:https
+server {
+   listen 80 default_server;
+   listen [::]:80 default_server ipv6only=on;
+   server_name shinyserver.leudave.cloudns.cl www.shinyserver.leudave.cloudns.cl;
+   return 301 https://$server_name$request_uri;
+}
+server {
+   listen 443 ssl;
+   server_name shinyserver.leudave.cloudns.cl www.shinyserver.leudave.cloudns.cl;
+   ssl_certificate /etc/letsencrypt/live/shinyserver.leudave.cloudns.cl/fullchain.pem;
+   ssl_certificate_key /etc/letsencrypt/live/shinyserver.leudave.cloudns.cl/privkey.pem;
+   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+   ssl_prefer_server_ciphers on;
+   ssl_ciphers AES256+EECDH:AES256+EDH:!aNULL;
+
+   location / {
+       proxy_pass http://3.18.108.128:3838;
+       proxy_redirect http://3.18.108.128:3838/ https://$host/;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection $connection_upgrade;
+       proxy_read_timeout 20d;
+   }
+}
