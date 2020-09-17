@@ -10,7 +10,7 @@ shinyServer(function(input, output, session){
 				list("Binomial"="bin") # discrete
 			)
 		} else if(input$disttype=="Continua"){
-			radioButtons("dist","Distribución:",selected="chisq",
+			radioButtons("dist","Distribución:",selected="norm",
 				list("Normal"="norm","Chi-cuadrada"="chisq","t"="t","F"="F")
 			)
 		}
@@ -126,10 +126,11 @@ shinyServer(function(input, output, session){
 			expr <- get(paste("expr",dist,sep="."))
 			par(mar=margins)
 			if(input$disttype=="Discreta"){
-				barplot(as.numeric(table(d))/input$n,names.arg=names(table(d)),main=expr,xlab="Observaciones",ylab="Densidad",col="orange",cex.main=1.5,cex.axis=1.3,cex.lab=1.3)
+				barplot(as.numeric(table(d))/input$n,names.arg=names(table(d)),main=expr,xlab="Observaciones",ylab="Densidad",col="orange", cex.main=1.5,cex.axis=1.3,cex.lab=1.3)
 			}
 			if(input$disttype=="Continua"){
-				hist(d,main=expr,xlab="Observaciones",ylab="Densidad",col="orange",cex.main=1.5,cex.axis=1.3,cex.lab=1.3,prob=T)
+				hist(d,main=expr,xlab="Observaciones",ylab="Densidad",col="orange", cex.main=1.5,cex.axis=1.3,cex.lab=1.3, prob=T)
+			  abline(v = mean(d), col = "blue", lwd = 2)
 				if(length(input$density)) if(input$density & length(input$bw)) lines(density(d,adjust=input$bw),lwd=2)
 			}
 		}

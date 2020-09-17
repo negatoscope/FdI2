@@ -1,0 +1,12 @@
+name: distribuciones
+title: distribuciones
+username:
+account: leudave
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2828109
+bundleId: 3638940
+url: https://leudave.shinyapps.io/distribuciones/
+when: 1600328053.00676
+asMultiple: FALSE
+asStatic: FALSE

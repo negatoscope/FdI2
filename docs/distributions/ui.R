@@ -3,7 +3,7 @@ tabPanelAbout <- source("about.r")$value
 library(shinythemes)
 shinyUI(fluidPage(theme=shinytheme("united"),
 	headerPanel(
-		HTML('Distribuciones de Variables Aleatorias'
+		HTML('Distribuciones de Probabilidad'
 		), "Distribuciones de Variables Aleatorias"
 	),
 	fluidRow(
