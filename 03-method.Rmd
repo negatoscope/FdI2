@@ -498,7 +498,7 @@ plot( 	xval, yval, lwd=3, ylab="Probability Density", xlab="Observed Value",
 ```
 
 
-Debido a que estas distribuciones están estrechamente relacionadas con la distribución normal y entre sí, y porque se convertirán en las distribuciones importantes al hacer análisis estadísticos inferenciales en este curso, creo que es útil hacer una pequeña demostración de cómo estas distribuciones realmente están relacionadas entre sí. Primero, veamos una variable `normal.a` que tiene 1000 observaciones aleatorias distribuidas normalmente:
+Debido a que estas distribuciones están estrechamente relacionadas con la distribución normal y entre sí, y porque se convertirán en las distribuciones importantes al hacer análisis estadísticos inferenciales en este curso, creo que es útil hacer una pequeña demostración de cómo estas distribuciones realmente están relacionadas entre sí. Primero, veamos una variable `normal.a` que tiene 10000 observaciones aleatorias distribuidas normalmente:
   ```{r eval=FALSE}
 normal.a <- rnorm( n=1000, mean=0, sd=1 )  
 print(head(normal.a))
