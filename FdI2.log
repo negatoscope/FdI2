@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.10)  15 SEP 2020 15:09
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.10)  23 SEP 2020 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,76 +493,45 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count286
 )
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
-
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
-.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: xetex.def on input line 147.
-
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
-.def
-File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
-))
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
-sty
-Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count287
-\FV@InFile=\read2
-\FV@TabBox=\box49
-\c@FancyVerbLine=\count288
-\FV@StepNumber=\count289
-\FV@OutFile=\write3
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
-y
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip55
-\fb@frw=\dimen151
-\fb@frh=\dimen152
-\FrameRule=\dimen153
-\FrameSep=\dimen154
-)
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip56
-\LTright=\skip57
-\LTpre=\skip58
-\LTpost=\skip59
-\LTchunksize=\count290
-\LTcapwidth=\dimen155
-\LT@head=\box50
-\LT@firsthead=\box51
-\LT@foot=\box52
-\LT@lastfoot=\box53
-\LT@cols=\count291
-\LT@rows=\count292
-\c@LT@tables=\count293
-\c@LT@chunks=\count294
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count287
+\LTcapwidth=\dimen151
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
 \LT@p@ftn=\toks23
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen156
-\lightrulewidth=\dimen157
-\cmidrulewidth=\dimen158
-\belowrulesep=\dimen159
-\belowbottomsep=\dimen160
-\aboverulesep=\dimen161
-\abovetopsep=\dimen162
-\cmidrulesep=\dimen163
-\cmidrulekern=\dimen164
-\defaultaddspace=\dimen165
-\@cmidla=\count295
-\@cmidlb=\count296
-\@aboverulesep=\dimen166
-\@belowrulesep=\dimen167
-\@thisruleclass=\count297
-\@lastruleclass=\count298
-\@thisrulewidth=\dimen168
+\heavyrulewidth=\dimen152
+\lightrulewidth=\dimen153
+\cmidrulewidth=\dimen154
+\belowrulesep=\dimen155
+\belowbottomsep=\dimen156
+\aboverulesep=\dimen157
+\abovetopsep=\dimen158
+\cmidrulesep=\dimen159
+\cmidrulekern=\dimen160
+\defaultaddspace=\dimen161
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen162
+\@belowrulesep=\dimen163
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen164
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
@@ -579,9 +548,13 @@ ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
-)
-\Gin@req@height=\dimen169
-\Gin@req@width=\dimen170
+
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
+.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.st
 y
@@ -593,9 +566,9 @@ line 40.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.st
 y
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip60
-\thanksmargin=\skip61
-\droptitle=\skip62
+\thanksmarkwidth=\skip59
+\thanksmargin=\skip60
+\droptitle=\skip61
 ) (./FdI2.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
@@ -603,33 +576,33 @@ LaTeX Info: Redefining \ttfamily on input line 20.
 )
 \openout1 = `FdI2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+8.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 138.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -643,18 +616,18 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count296
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 (./FdI2.out) (./FdI2.out)
-\@outlinefile=\write4
-\openout4 = `FdI2.out'.
+\@outlinefile=\write3
+\openout3 = `FdI2.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 138.
-LaTeX Info: Redefining \sffamily on input line 138.
-LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 98.
+LaTeX Info: Redefining \sffamily on input line 98.
+LaTeX Info: Redefining \ttfamily on input line 98.
 [1
 
 
@@ -698,33 +671,33 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `FdI2.toc'.
+\tf@toc=\write4
+\openout4 = `FdI2.toc'.
 
 [3] [4
 
 ]
 Capítulo 1.
 
-Underfull \hbox (badness 1184) in paragraph at lines 169--187
+Underfull \hbox (badness 1184) in paragraph at lines 129--147
 \TU/lmr/m/n/10 los periódicos o en la vida cotidiana, pero pensemos brevemento 
 sobre
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 169--187
+Underfull \hbox (badness 1308) in paragraph at lines 129--147
 \TU/lmr/m/n/10 lo que implica. Una compañía encuestadora ha realizado una encue
 sta,
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 169--187
+Underfull \hbox (badness 2368) in paragraph at lines 129--147
 \TU/lmr/m/n/10 restantes (aproximadamente el 99.998% de los votantes) siguen si
 endo
  []
 
 [5] [6]
-Underfull \hbox (badness 1024) in paragraph at lines 237--240
+Underfull \hbox (badness 1024) in paragraph at lines 197--200
 []\TU/lmr/m/n/10 ¿Qué probabilidad hay de que cinco cartas extraídas de un mazo
 
  []
@@ -739,7 +712,7 @@ Overfull \hbox (25.05122pt too wide) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9]
-Underfull \hbox (badness 1389) in paragraph at lines 430--454
+Underfull \hbox (badness 1389) in paragraph at lines 390--414
 \TU/lmr/m/n/10 la proporción de caras convergerá en el 50%. Tecnicismos matemát
 icos
  []
@@ -748,174 +721,140 @@ File: FdI2_files/figure-latex/frequentistprobability-1.pdf Graphic file (type p
 df)
 <use FdI2_files/figure-latex/frequentistprobability-1.pdf>
 [10] [11]
-Underfull \hbox (badness 3780) in paragraph at lines 509--531
+Underfull \hbox (badness 3780) in paragraph at lines 469--491
 []\TU/lmr/m/n/10 La alternativa a la visión frecuentista, la \TU/lmr/bx/it/10 v
 isión bayesiana \TU/lmr/m/n/10 de la
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 509--531
+Underfull \hbox (badness 1442) in paragraph at lines 469--491
 \TU/lmr/m/n/10 relativamente minoritaria entre los estadísticos, aunque ha ido 
 ganando
  []
 
 [12] [13] [14]
-Overfull \hbox (26.747pt too wide) in alignment at lines 642--647
+Overfull \hbox (26.747pt too wide) in alignment at lines 602--607
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.747pt too wide) in alignment at lines 647--652
+Overfull \hbox (26.747pt too wide) in alignment at lines 607--612
  [] [] [] [] [] [] 
  []
 
 File: FdI2_files/figure-latex/pantsprob-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/pantsprob-1.pdf>
 
-Underfull \hbox (badness 2846) in paragraph at lines 688--692
+Underfull \hbox (badness 2846) in paragraph at lines 648--652
 \TU/lmr/m/n/10 comienzos, es posible construir algunas herramientas matemáticas
  más
  []
 
 [15] [16]
-Underfull \hbox (badness 4805) in paragraph at lines 708--717
+Underfull \hbox (badness 4805) in paragraph at lines 668--678
 []\TU/lmr/m/n/10 Como hemos visto, las distribuciones de probabilidad pueden va
 riar
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 745.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 745.
-[17]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 786.
 
-Overfull \hbox (573.75pt too wide) in paragraph at lines 792--792
-[]\TU/lmtt/m/n/10 ## PhantomJS not found. You can install it with webshot::inst
-all_phantomjs(). If it is installed, please make sure the phantomjs executable 
-can be found via the PATH variable.[] 
+Underfull \hbox (badness 1142) in paragraph at lines 668--678
+\TU/lmr/m/n/10 importantes, y de las que hablaremos en esta asignatura son cinc
+o: la
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 706.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 706.
 
-Overfull \hbox (574.73004pt too wide) in paragraph at lines 798--805
+Underfull \hbox (badness 1087) in paragraph at lines 695--716
+\TU/lmr/m/n/10 Dejaremos que $\OML/lmm/m/it/10 N$ \TU/lmr/m/n/10 denote el núme
+ro de dados que se tiran en nuestro
+ []
+
+[17]
+Overfull \hbox (574.73004pt too wide) in paragraph at lines 751--758
  [][] 
  []
 
 File: FdI2_files/figure-latex/binomial1-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/binomial1-1.pdf>
+
+Underfull \hbox (badness 1655) in paragraph at lines 771--786
+[]\TU/lmr/m/n/10 Para darte una idea de cómo cambia la distribución binomial cu
+ando
+ []
+
 [18] [19]
-Overfull \hbox (117.0pt too wide) in paragraph at lines 830--830
-[]                      \TU/lmtt/m/n/10 <!--          out, prob, type="h", lwd=
-3, ylab="Probability",  -->[] 
- []
+File: FdI2_files/figure-latex/binomial2a-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/binomial2a-1.pdf>
+File: FdI2_files/figure-latex/binomial2b-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/binomial2b-1.pdf>
 
-
-Overfull \hbox (164.25pt too wide) in paragraph at lines 830--830
-[]                      \TU/lmtt/m/n/10 <!--          frame.plot=FALSE, col=ife
-lse(colour,emphCol,"black"), ... -->[] 
- []
-
-
-Overfull \hbox (117.0pt too wide) in paragraph at lines 844--844
-[]                      \TU/lmtt/m/n/10 <!--          out, prob, type="h", lwd=
-3, ylab="Probability",  -->[] 
- []
-
-
-Overfull \hbox (164.25pt too wide) in paragraph at lines 844--844
-[]                      \TU/lmtt/m/n/10 <!--          frame.plot=FALSE, col=ife
-lse(colour,emphCol,"black"), ... -->[] 
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 848--855
+Underfull \hbox (badness 1043) in paragraph at lines 807--815
 []\TU/lmr/m/n/10 Si bien la distribución binomial es conceptualmente la distrib
 ución más
  []
 
-[20]
+[20] [21]
 File: FdI2_files/figure-latex/normdist-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/normdist-1.pdf>
-[21]
 File: FdI2_files/figure-latex/normmean-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/normmean-1.pdf>
 File: FdI2_files/figure-latex/normsd-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/normsd-1.pdf>
-[22] [23]
+[22] [23] [24] [25]
 File: FdI2_files/figure-latex/sdnorm1-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/sdnorm1-1.pdf>
 File: FdI2_files/figure-latex/sdnorm2-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/sdnorm2-1.pdf>
-[24] [25] [26]
+[26] [27] [28]
 File: FdI2_files/figure-latex/tdist-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/tdist-1.pdf>
-
-LaTeX Warning: Reference `chisquare' on page 27 undefined on input line 1090.
-
+[29]
 File: FdI2_files/figure-latex/chisqdist-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/chisqdist-1.pdf>
-
-LaTeX Warning: Reference `anova' on page 27 undefined on input line 1117.
-
 File: FdI2_files/figure-latex/Fdist-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/Fdist-1.pdf>
+[30] [31]
+File: FdI2_files/figure-latex/distnormal-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/distnormal-1.pdf>
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 1137--1146
-[]\TU/lmtt/m/n/10 r   normal.a <- rnorm( n=1000, mean=0, sd=1 )     print(head(
-normal.a))
+Underfull \hbox (badness 1371) in paragraph at lines 1105--1117
+\TU/lmr/m/n/10 distribuidos normalmente). A estas nuevas dos variables las llam
+aremos
  []
 
+[32]
+File: FdI2_files/figure-latex/distchi-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/distchi-1.pdf>
+File: FdI2_files/figure-latex/distt-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/distt-1.pdf>
 
-Underfull \hbox (badness 1253) in paragraph at lines 1137--1146
-\TU/lmtt/m/n/10 hist( normal.a ) \TU/lmr/m/n/10 La variable \TU/lmtt/m/n/10 nor
-mal.a \TU/lmr/m/n/10 contiene 1000 números que se
- []
-
-[27] [28] [29] [30]
-File: FdI2_files/figure-latex/variaterelations-1.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/variaterelations-1.pdf>
-
-Underfull \hbox (badness 1158) in paragraph at lines 1151--1151
-[]\TU/lmr/m/n/10 Figura 1.12: [][]A histogram of different distributions with s
-ome advanced
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 1167--1170
-[]\TU/lmtt/m/n/10 r   normal.b <- rnorm( n=1000 )  # another set of normally di
-stributed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1170
-\TU/lmtt/m/n/10 data   normal.c <- rnorm( n=1000 )  # and another! \TU/lmr/m/n/
-10 Una vez que
- []
-
-[31]
-Underfull \hbox (badness 1377) in paragraph at lines 1177--1181
-\TU/lmr/m/n/10 que siguen una distribución de chi-cuadrada con 3 grados de libe
-rtad.
- []
-
-
-LaTeX Warning: Reference `chisquare' on page 32 undefined on input line 1191.
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 1222--1226
+Underfull \hbox (badness 1796) in paragraph at lines 1154--1161
 []\TU/lmr/m/n/10 Del mismo modo, podemos obtener una distribución $\OML/lmm/m/i
 t/10 F$ \TU/lmr/m/n/10 al dividir dos
  []
 
-[32]
 
-LaTeX Warning: Reference `normal' on page 33 undefined on input line 1278.
+Underfull \hbox (badness 3942) in paragraph at lines 1154--1161
+\TU/lmr/m/n/10 distribuciones chi-cuadrada “escaladas”. Supongamos, por ejemplo
+, que
+ []
+
+[33] [34]
+File: FdI2_files/figure-latex/distf-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/distf-1.pdf>
+
+Underfull \hbox (badness 1067) in paragraph at lines 1168--1168
+[]\TU/lmr/m/n/10 Figura 1.17: [][]Distribución F. En este ejemplo hipotético, s
+e compara la
+ []
 
 
-LaTeX Warning: Reference `ttest' on page 33 undefined on input line 1296.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[33]
+[35]
 No file FdI2.bbl.
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -952,30 +891,27 @@ braces):
 >  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/totalhyphenmin}  =>  {5}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1304.
-[34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1304.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1230.
+[36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1230.
 (./FdI2.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1304.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1230.
 
 Package rerunfilecheck Info: File `FdI2.out' has not changed.
-(rerunfilecheck)             Checksum: C8B4E1501BEEAFF65B5F23248EB112B0;1449.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 46E5847F2FA3CB1CB5EC8FC6B869502E;1622.
  ) 
 Here is how much of TeX's memory you used:
- 14726 strings out of 481674
- 278892 string characters out of 5931432
- 604926 words of memory out of 5000000
- 31567 multiletter control sequences out of 15000+600000
- 555882 words of font info for 76 fonts, out of 8000000 for 9000
+ 14231 strings out of 481674
+ 271703 string characters out of 5931432
+ 595297 words of memory out of 5000000
+ 31083 multiletter control sequences out of 15000+600000
+ 555866 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,8n,64p,801b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,8n,64p,801b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on FdI2.pdf (34 pages).
+Output written on FdI2.pdf (36 pages).

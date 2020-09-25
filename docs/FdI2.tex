@@ -36,46 +36,6 @@
 \fi
 \usepackage{natbib}
 \bibliographystyle{apalike}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -130,7 +90,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-09-15}
+    \date{2020-09-23}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -706,37 +666,38 @@ No \(A\) & \(P(\neg A)\) & = & \(1-P(A)\)\tabularnewline
 \section{La distribución binomial}\label{binomial}
 
 Como hemos visto, las distribuciones de probabilidad pueden variar
-enormemente, por lo que existe un gran número de distribuciones. Sin
-embargo, no todas son igual de importantes. Las distribuciones más
-importantes, y de las que hablaremos en esta asignatura son cinco: la
-distribución binomial, la distribución normal, la distribución \(t\), la
-distribución \(\chi^2\) (``chi-cuadrada'') y la distribución \(F\).
-Daremos una breve introducción a las cinco, prestando especial atención
-a las distribuciones binomial y normal. Comenzaremos con la distribución
-más simple de las cinco, la distribución binomial.
+enormemente, por lo que existe un gran número de distribuciones
+posibles. Sin embargo, no todas son igual de importantes. Las
+distribuciones más importantes, y de las que hablaremos en esta
+asignatura son cinco: la distribución binomial, la distribución normal,
+la distribución \(t\), la distribución \(\chi^2\) (``chi-cuadrada'') y
+la distribución \(F\). Daremos una breve introducción a las cinco,
+prestando especial atención a las distribuciones binomial y normal.
+Comenzaremos con la distribución más simple de las cinco, la
+distribución binomial.
 
 \subsection{Introducción al binomio}\label{introduccion-al-binomio}
 
-La teoría de la probabilidad se originó para intentar describir cómo
-funcionaban los juegos de azar, por lo que parece adecuado que nuestra
-discusión sobre la \textbf{\emph{distribución binomial}} involucre una
-discusión sobre tirar dados y lanzar monedas. Imaginemos el siguiente
-``experimento'': tengo en mi poder 20 dados iguales de seis caras. En
-una de las caras de cada dado hay una imagen de una calavera; las otras
-cinco caras están en blanco. Si tiro los 20 dados, ¿cuál es la
-probabilidad de que obtenga exactamente 4 calaveras? Asumiendo que los
-dados son justos, sabemos que la probabilidad de que en un dado salga la
-calavera es de de 1 en 6; dicho de otra forma, la probabilidad de que
-salga calavera en un solo dado es de aproximadamente \(.167\). Esta
-información es suficiente para responder nuestra pregunta anterior, así
-que veamos cómo hemos podido llegar a ella.
+La teoría de la probabilidad se creó originalmente para intentar
+describir cómo funcionaban los juegos de azar, por lo que parece
+adecuado que nuestra discusión sobre la \textbf{\emph{distribución
+binomial}} involucre una discusión sobre tirar dados y lanzar monedas.
+Imaginemos el siguiente ``experimento'': tengo en mi poder 20 dados
+iguales de seis caras. En una de las caras de cada dado hay una imagen
+de una calavera; las otras cinco caras están en blanco. Si tiro los 20
+dados, ¿cuál es la probabilidad de que obtenga exactamente 4 calaveras?
+Asumiendo que los dados son justos, sabemos que la probabilidad de que
+en un dado salga la calavera es de de 1 en 6; dicho de otra forma, la
+probabilidad de que salga calavera en un solo dado es de aproximadamente
+\(.167\). Esta información es suficiente para poder responder a nuestra
+pregunta anterior, así que veamos cómo hacerlo.
 
-Primero, pondremos algunos nombres a los eventos y a su respectiva
-notación. Dejaremos que \(N\) denote el número de dados que tiran en
+Primero, pondremos algunos nombres a los eventos con su respectiva
+notación. Dejaremos que \(N\) denote el número de dados que se tiran en
 nuestro experimento; a esto se le conoce como el \textbf{\emph{parámetro
 de tamaño}} de nuestra distribución binomial. También usaremos
-\(\theta\) para referirnos a la probabilidad de que en un solo dado
-calavera, una cantidad que generalmente se denomina como la
+\(\theta\) para referirnos a la probabilidad de que al tirar un solo
+dado salga calavera, una cantidad que generalmente se denomina como la
 \textbf{\emph{probabilidad de éxito}} del binomio.\footnote{Hay que
   tener en cuenta que el término ``éxito'' es bastante arbitrario, y en
   realidad no implica que el resultado sea algo deseado. Si \(\theta\)
@@ -748,48 +709,40 @@ experimento, es decir, la cantidad de calaveras que obtengo cuando lanzo
 los dados. Dado que el valor real de \(X\) se debe al azar, nos podemos
 referir a ella como una \textbf{\emph{variable aleatoria}}. En cualquier
 caso, ahora que tenemos toda esta terminología y notación, podemos
-usarlo para exponer el problema que planteábamos en el párrafo anterior
-con mayor precisión. La cantidad que queremos calcular es la
+utilizarlos para exponer el problema que planteábamos en el párrafo
+anterior con mayor precisión. La cantidad que queremos calcular es la
 probabilidad de que \(X = 4\) sabiendo que \(\theta = .167\) y \(N=20\).
 La ``forma'' general de esta probabilidad que me interesa calcular
 podría escribirse como, \[
   P(X \ | \ \theta, N)
-\] y estamos interesados en el caso específico donde \(X=4\),
+\] donde estamos interesados en el caso específico donde \(X=4\),
 \(\theta = .167\) y \(N=20\). Hace falta un elemento de notación más
 antes de continuar con la solución del problema. Si yo quiero decir que
 \(X\) se genera aleatoriamente a partir de una distribución binomial con
-los parámetros \(\theta\) y \(N\), la notación que usaría es la
-siguiente: \[
+los parámetros \(\theta\) y \(N\), la notación que usaría para
+expresarlo sería la siguiente: \[
   X \sim \mbox{Binomial}(\theta, N)
 \]
 
 Aunque no utilizaremos las fórmulas para hacer cálculos formalmente,
 dejaré la fórmula de la distribución binomial en la Tabla
 \ref{tab:distformulas}, ya que puede ser útil si se quieren entender
-temas más avanzados. Por lo pronto, analizaremos como se ve la
-distribución binomial. La Figura \ref{fig:binomial1} dibuja la
-probabilidad binomial para todos los valores posibles de \(X\) de
-nuestro experimento de lanzamiento de dados, partiendo desde \(X=0\)
-(ninguna sale calavera) hasta \(X=20\) (salen todas calaveras). Hay que
-tener en cuenta que esto es básicamente un gráfico de barras, al igual
-que la gráfica de la ``probabilidad de pantalones'' de la Figura
-\ref{fig:pantsprob}. En el eje horizontal tenemos todos los eventos
-posibles, y en el eje vertical podemos leer la probabilidad de que
-ocurra cada uno de esos eventos. Por lo tanto, la probabilidad de que
-salgan 4 calaveras al tirar 20 dados es de aproximadamente 0,20 (la
-respuesta exacta es 0,2022036, como veremos en un momento). En otras
-palabras, esperaría que ese evento suceda aproximadamente el 20\% de las
-veces que se lleve a cabo este experimento.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_app}\NormalTok{(}\StringTok{'https://shinyserver.leudave.cloudns.cl/distributions/'}\NormalTok{, }\DataTypeTok{height =} \StringTok{"600px"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
-\end{verbatim}
+temas más avanzados con algo de profundidad. Por lo pronto, analizaremos
+como se ve una distribución binomial (puedes hacerlo tú mismo si entras
+aquí{[}\url{https://leudave.shinyapps.io/distribuciones/}{]}). La Figura
+\ref{fig:binomial1} dibuja la probabilidad binomial para todos los
+valores posibles de \(X\) de nuestro experimento de lanzamiento de
+dados, partiendo desde \(X=0\) (ninguna sale calavera) hasta \(X=20\)
+(salen todas calaveras). Hay que tener en cuenta que esto es básicamente
+un gráfico de barras, al igual que la gráfica de la ``probabilidad de
+pantalones'' de la Figura \ref{fig:pantsprob}. En el eje horizontal
+tenemos todos los eventos posibles, y en el eje vertical podemos leer la
+probabilidad de que ocurra cada uno de esos eventos. Por lo tanto, la
+probabilidad de que salgan 4 calaveras al tirar 20 dados es de
+aproximadamente 0,20 (la respuesta exacta es 0,2022036, como veremos en
+un momento). En otras palabras, esperaría que ese evento suceda
+aproximadamente el 20\% de las veces que se lleve a cabo este
+experimento.
 
 \begin{table}[t]
 
@@ -815,35 +768,41 @@ probabilidad, cada una de las probabilidades debe ser un número entre 0
 y 1, y la altura de las barras también deben sumar 1.}
 \end{figure}
 
-\begin{verbatim}
-  <!--      # probabilities of each outcome -->
-  <!--      out <- 0:n -->
-    <!--        prob <- dbinom( x=out, size=n, prob=p ) -->
-      
-      <!--      # plot -->
-      <!--      plot(  -->
-                      <!--          out, prob, type="h", lwd=3, ylab="Probability",  -->
-                      <!--          frame.plot=FALSE, col=ifelse(colour,emphCol,"black"), ... -->
-                      <!--      ) -->
-      
-      <!--  } -->
-\end{verbatim}
+Para darte una idea de cómo cambia la distribución binomial cuando
+modificamos los valores de \(\theta\) y \(N\), supongamos que en lugar
+de tirar dados, en realidad estoy lanzando monedas. Esta vez, mi
+experimento implica lanzar una moneda justa repetidamente, y el
+resultado que me interesa es la cantidad de caras que observo. En este
+escenario, la probabilidad de éxito ahora es de \(\theta = 1/2\).
+Supongamos que tirara la moneda \(N=20\) veces. En este ejemplo, he
+cambiado la probabilidad de éxito, pero mantuve el tamaño de la muestra
+del experimento. ¿Qué efecto tiene este cambio en nuestra distribución
+binomial? Bueno, como la Figura \ref{fig:binomial2a} muestra, el efecto
+principal fue el desplazamiento de toda la distribución hacia la
+derecha, como era de esperar. ¿Y si lanzamos una moneda \(N=100\) veces?
+En este caso obtendremos algo como lo de la Figura \ref{fig:binomial2b}.
+La distribución se mantiene aproximadamente en el medio, pero hay un
+poco más de variabilidad en los posibles resultados.
 
-\begin{verbatim}
-  <!--      # probabilities of each outcome -->
-  <!--      out <- 0:n -->
-    <!--        prob <- dbinom( x=out, size=n, prob=p ) -->
-      
-      <!--      # plot -->
-      <!--      plot(  -->
-                      <!--          out, prob, type="h", lwd=3, ylab="Probability",  -->
-                      <!--          frame.plot=FALSE, col=ifelse(colour,emphCol,"black"), ... -->
-                      <!--      ) -->
-      
-      <!--  } -->
-\end{verbatim}
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/binomial2a-1.pdf}
+\caption{\label{fig:binomial2a}Dos distribuciones binomiales, que involucran
+un escenario en el que lanzo una moneda justa, donde la probabilidad de
+éxito es \(theta = 1/2\). Asumimos que estoy lanzando la moneda \(N=20\)
+veces.}
+\end{figure}
 
-\#\# La distribución normal\{\#normal\}
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/binomial2b-1.pdf}
+\caption{\label{fig:binomial2b}Dos distribuciones binomiales, que involucran
+un escenario en el lanzo una moneda justa, donde la probabilidad de
+éxito subyacente es \(theta = 1/2\). Asumimos que estoy lanzando la
+moneda \(N=100\) veces.}
+\end{figure}
+
+\section{La distribución normal}\label{normal}
 
 Si bien la distribución binomial es conceptualmente la distribución más
 sencilla de entender, no es la más importante. Ese honor le corresponde
@@ -852,17 +811,17 @@ de campana'' o como ``distribución gaussiana'' o ``campana de Gauss''.
 Una distribución normal se describe utilizando dos parámetros, la media
 de la distribución \(\mu\) y la desviación estándar de la distribución
 \(\sigma\). La notación que utilizamos para decir que una variable \(X\)
-se distribuye normalmente es la siguiente: \[
+se distribuye normalmente es la siguiente:
+
+\[
   X \sim \mbox{Normal}(\mu,\sigma)
 \] Al igual que con la distribución binomial, he incluido la fórmula
 para la distribución normal en la tabla \ref{tab:distformulas}, porque
 creo que es lo suficientemente importante como para que todos los que
 aprenden algo de estadística al menos la conozcan, aunque no nos
-enfoquemos en ella. Del mismo modo, las funciones R para la distribución
-normal son \texttt{dnorm()}, \texttt{pnorm()}, \texttt{qnorm()} y
-\texttt{rnorm()}.
+enfoquemos en ella.
 
-Vamos intentar descubrir lo que significa que una variable esté
+Vamos intentar descifrar lo que significa que una variable esté
 normalmente distribuida. Echemos un vistazo a la Figura
 \ref{fig:normdist}, que muestra una distribución normal con media
 \(\mu = 0\) y desviación estándar \(\sigma = 1\). Con un poco de
@@ -872,8 +831,8 @@ la imagen de la distribución normal en la Figura \ref{fig:normdist}
 muestra una curva suave en lugar de barras ``tipo histograma''. Esto no
 es arbitrario: la distribución normal es continua, mientras que la
 distribución binomial es discreta. Por ejemplo, en el experimento de
-tiro de dados de la sección anterior, era posible obtener 3 calaveras o
-4 calaveras, mientras que un valor intermedio como 3.9 era imposible de
+tiro de dados de la sección anterior, es posible obtener 3 calaveras o 4
+calaveras, mientras que un valor intermedio como 3.9 es imposible de
 obtener. Este hecho se ve reflejado en la Figura \ref{fig:binomial1},
 donde tenemos una barra ubicada en \(X=3\) y otra en \(X=4\), pero entre
 ellas no hay nada. En cambio, los valores continuos no tienen esta
@@ -901,27 +860,27 @@ particular de \(x\). Sin embargo, las alturas nos informan sobre qué
 valores de \(x\) son más probables (¡los más altos!).}
 \end{figure}
 
-Con esto en mente, veamos si podemos intuir cómo funciona una
-distribución normal. En primer lugar, veamos qué es lo que sucede cuando
-jugamos con los parámetros de la distribución. Con ese fin, la Figura
-\ref{fig:normmean} muestra distribuciones normales que tienen medias
-diferentes, pero la misma desviación estándar. Como es de esperar, todas
-estas distribuciones tienen la mismo ``anchura''. La unica diferencia
-entre ellas es que se han desplazado hacia la izquierda o hacia la
-derecha. En todos los demás aspectos son idénticas. Por el contrario, si
-aumentamos la desviación estándar mientras mantenemos la media
-constante, el pico de la distribución permanece en el mismo lugar, pero
-la distribución se amplía, como podemos ver en la Figura
-\ref{fig:normsd}. Sin embargo, cuando ampliamos la distribución, la
-altura del pico disminuye. Esto \emph{tiene} que suceder: de la misma
-forma que las alturas de las barras de una distribución binomial
-discreta tienen que \emph{sumar} 1, el total del \emph{área bajo la
-curva} de una distribución normal debe ser igual a 1.
+Una vez visto esto, vamos a analizar cómo funciona una distribución
+normal. En primer lugar, veamos qué es lo que sucede cuando jugamos con
+los parámetros de la distribución (puedes hacerlo tú mismo si entras en
+este enlace). La Figura \ref{fig:normmean} muestra distribuciones
+normales que tienen medias diferentes, pero con la misma desviación
+estándar. Como es de esperar, todas estas distribuciones tienen la misma
+``anchura''. La unica diferencia entre ellas es que se han desplazado
+hacia la izquierda o hacia la derecha. En todos los demás aspectos son
+idénticas. Por el contrario, si aumentamos la desviación estándar
+mientras mantenemos la media constante, el pico de la distribución
+permanece en el mismo lugar, pero la distribución se amplía, como
+podemos ver en la Figura \ref{fig:normsd}. Sin embargo, cuando ampliamos
+la distribución, la altura del pico disminuye. Esto \emph{tiene} que
+suceder: de la misma forma que las alturas de las barras de una
+distribución binomial discreta tienen que \emph{sumar} 1, el total del
+\emph{área bajo la curva} de una distribución normal debe ser igual a 1.
 
 \begin{figure}
 \centering
 \includegraphics{FdI2_files/figure-latex/normmean-1.pdf}
-\caption{\label{fig:normmean}Una ilustración de lo que sucede cuando se
+\caption{\label{fig:normmean}Gráfica que demuestra lo que sucede cuando se
 cambia la media de una distribución normal. La línea sólida representa
 una distribución normal con media de \(mu=4\). La línea discontinua
 muestra una distribución normal con una media de \(mu=7\). En ambos
@@ -937,8 +896,8 @@ discontinua se desplaza hacia la derecha.}
 desviación estándar de una distribución normal. Ambas distribuciones
 tienen una media de \(mu=5\), pero diferentes desviaciones estándar. La
 línea continua dibuja una distribución con una desviación estándar
-\(sigma=1\), y la línea discontinua la línea muestra una distribución
-con desviación estándar de \(sigma=2\). Como consecuencia, ambas
+\(sigma=1\), y la línea discontinua muestra una distribución con
+desviación estándar de \(sigma=2\). Como consecuencia, ambas
 distribuciones están centradas en el mismo lugar, pero la distribución
 con la línea discontinua es más ancha que la otra.}
 \end{figure}
@@ -983,25 +942,16 @@ media.}
 \subsection{Densidad de probabilidad}\label{density}
 
 A lo largo de la discusión sobre la distribución normal, ha habido un
-par de cosas que parecen no tener sentido. Quizás hayas notado que en
+par de cosas que parecen no tener sentido. Quizás hayas notado que el
 eje \(y\) en estas Figuras se denomina como ``Densidad de probabilidad''
 en lugar de ``Probabilidad''. Tal vez notaste que utilizamos \(p(X)\) en
 lugar de \(P(X)\) en la fórmula de la distribución normal.
 
-Si utilizamos la Figura y calculamos la probabilidad de
-\texttt{x\ =\ 1}, para una variable normalmente distribuida con
-\texttt{media\ =\ 1} y desviación estándar \texttt{sd\ =\ 0.1}, nos
-arrojará como resultado una probabilidad de 3.99.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{dnorm}\NormalTok{( }\DataTypeTok{x =} \DecValTok{1}\NormalTok{, }\DataTypeTok{mean =} \DecValTok{1}\NormalTok{, }\DataTypeTok{sd =} \FloatTok{0.1}\NormalTok{ )}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 3.989423
-\end{verbatim}
+Si utilizamos la Figura y calculamos (siguiendo la fórmula) la
+probabilidad de \texttt{x\ =\ 1}, para una variable normalmente
+distribuida con \texttt{media\ =\ 1} y desviación estándar
+\texttt{sd\ =\ 0.1}, nos arrojará como resultado una probabilidad de
+3.99.
 
 Sin embargo, hemos visto anteriormente que las probabilidades \emph{no}
 pueden ser mayores que 1. Entonces, ¿qué es lo que hemos calculado?
@@ -1021,19 +971,20 @@ normal con media 23 y desviación estándar 1. ¿Cuál es la probabilidad de
 que la temperatura sea \emph{exactamente} 23 grados? La respuesta es
 ``cero'', o posiblemente, ``un número tan cercano a cero que bien podría
 ser cero''. ¿Por qué es esto? Es como intentar tirar un dardo en un
-tablero de dardos infinitamente pequeño: no importa cuán buena sea tu
-puntería, nunca acertarás. En la vida real nunca obtendremos el valor
-exacto de 23. Siempre será 23.1 o 22.99998 o algo así. En en otras
-palabras, no tiene sentido hablar de la probabilidad de que la
-temperatura sea exactamente 23 grados. Sin embargo, en el día a día, si
-el termómetro indica 23 grados pero en realidad hacen 22.9998 grados,
-probablemente no nos importaría demasiado. Esto es porque en el día a
-día, ``23 grados'' por lo general significa algo así como ``en algún
-lugar entre 22.5 y 23.5 grados''. Y aunque no parezca muy importante
-preguntar por la probabilidad de que la temperatura sea exactamente 23
-grados, lo que sí lo parece es preguntar sobre la probabilidad de que la
-temperatura se encuentre entre 22.5 y 23.5, o entre 20 y 30, o cualquier
-otro rango de temperaturas en el que estemos interesados.
+tablero de dardos con dianas infinitamente cada vez más pequeñas: no
+importa cuán buena sea tu puntería, nunca acertarás. En la vida real
+nunca obtendremos el valor exacto de 23. Siempre será 23.1 o 22.99998 o
+algo así. En en otras palabras, no tiene sentido hablar de la
+probabilidad de que la temperatura sea exactamente 23 grados. Sin
+embargo, en el día a día, si el termómetro indica 23 grados pero en
+realidad hacen 22.9998 grados, probablemente no nos importe demasiado.
+Esto es porque en el día a día, ``23 grados'' por lo general significa
+algo así como ``en algún lugar entre 22.5 y 23.5 grados''. Y aunque no
+parezca muy importante preguntar por la probabilidad de que la
+temperatura sea exactamente 23 grados, lo que sí lo parece es preguntar
+sobre la probabilidad de que la temperatura se encuentre entre 22.5 y
+23.5, o entre 20 y 30, o cualquier otro rango de temperaturas en el que
+estemos interesados.
 
 El objetivo de esta explicación es dejar claro que, cuando hablamos de
 distribuciones continuas, no tiene sentido hablar sobre la probabilidad
@@ -1061,15 +1012,16 @@ otra forma de llegar al mismo resultado.
 \section{Otras distribuciones útiles}\label{otherdists}
 
 La distribución normal es la distribución más utilizada por los
-estadísticos (por razones que se discutirán en breve), y la distribución
-binomial es útil muchos escenarios. Sin embargo, existen otros tipos de
-distribuciones de probabilidad. Revisaremos brevemente 3 de ellas: la
-distribución \(t\), la distribución \(\chi^2\) y la distribución \(F\) -
-La \textbf{\emph{distribución \(t\)}} es una distribución continua que
-se parece mucho a una distribución normal, pero que tiene colas más
-pesadas (ver Figura) \ref{fig:tdist}. Esta distribución tiende a surgir
-en situaciones en las que piensa que los datos siguen una distribución
-normal, pero no se conoce la media o la desviación estándar.
+estadísticos (por razones que se discutirán más adelante), y la
+distribución binomial es útil muchos escenarios. Sin embargo, existen
+otros tipos de distribuciones de probabilidad. Revisaremos brevemente 3
+de ellas: la distribución \(t\), la distribución \(\chi^2\) y la
+distribución \(F\) - La \textbf{\emph{distribución \(t\)}} es una
+distribución continua que se parece mucho a una distribución normal,
+pero que tiene colas más pesadas (ver Figura) \ref{fig:tdist}. Esta
+distribución tiende a surgir en situaciones en las que piensa que los
+datos siguen una distribución normal, pero no se conoce la media o la
+desviación estándar.
 
 \begin{figure}
 \centering
@@ -1077,8 +1029,9 @@ normal, pero no se conoce la media o la desviación estándar.
 \caption{\label{fig:tdist}Una distribución \(t\) con 3 grados de libertad
 (línea continua). Se asemeja a una distribución normal, pero no es igual
 (línea discontinua). Ten en cuenta que las ``colas'' de la distribución
-\(t\) son más ``pesadas'' (es decir, se extienden más hacia afuera) que
-las colas de la distribución normal.}
+\(t\) son más ``pesadas'' (es decir, se extienden más hacia afuera,
+conteniendo más valores que se alejan de la media) que las colas de la
+distribución normal.}
 \end{figure}
 
 \begin{itemize}
@@ -1086,23 +1039,24 @@ las colas de la distribución normal.}
 \item
   La \textbf{\emph{distribución \(\chi^2\)}} es otra distribución que
   podemos encontrar con cierta frecuencia. Es habitual encontrarla
-  cuando hacemos análisis de datos categóricos (Capítulo
-  \ref{chisquare}). Los valores de una distribución \(\chi^2\) se
-  consiguen al elevar al cuadrado los valores de una variable
-  distribuída normalmente y luego sumarlos (un procedimiento denominado
-  ``suma de cuadrados''). Después veremos porqué es útil hacer una
-  ``suma de cuadrados''. La apariencia de una distribución \(\chi^2\) la
-  puedes encontrar en la Figura \ref{fig:chisqdist}.
+  cuando hacemos análisis de datos categóricos. Los valores de una
+  distribución \(\chi^2\) se consiguen al elevar al cuadrado los valores
+  de una variable distribuída normalmente y luego sumarlos (un
+  procedimiento denominado ``suma de cuadrados''). Después veremos
+  porqué es útil hacer una ``suma de cuadrados''. La apariencia de una
+  distribución \(\chi^2\) la puedes encontrar en la Figura
+  \ref{fig:chisqdist}.
 \end{itemize}
 
 \begin{figure}
 \centering
 \includegraphics{FdI2_files/figure-latex/chisqdist-1.pdf}
 \caption{\label{fig:chisqdist}Una distribución \(chi^2\) con 3 grados de
-libertad. Observa que los valores siempre deben ser mayores que cero
-(los valores se elevan al cuadrado y se suman), y que la distribución es
-bastante sesgada (en este caso hacia la izquierda). Estas son las
-características clave de una distribución chi-cuadrado.}
+libertad (3 repeticiones, lo explicaremos más adelante). Observa que los
+valores siempre deben ser mayores que cero (los valores se elevan al
+cuadrado y se suman), y que la distribución es bastante sesgada (en este
+caso hacia la derecha). Estas son las características clave de una
+distribución chi-cuadrado.}
 \end{figure}
 
 \begin{itemize}
@@ -1113,16 +1067,15 @@ características clave de una distribución chi-cuadrado.}
   distribuciones \(\chi^2\) entre sí. Es decir, si queremos comparar dos
   ``sumas de cuadrados'' diferentes, nos encontraremos con una
   distribución \(F\). Aún no hemos visto un ejemplo de todo lo que
-  implica una suma de cuadrados, pero lo veremos en el Capítulo
-  \ref{anova} donde nos encontraremos nuevamente con la distribución
-  \(F\).
+  implica una suma de cuadrados, pero lo veremos cuando hablemos sobre
+  ANOVAs, donde nos encontraremos nuevamente con la distribución \(F\).
 \end{itemize}
 
 \begin{figure}
 \centering
 \includegraphics{FdI2_files/figure-latex/Fdist-1.pdf}
 \caption{\label{fig:Fdist}Una distribución \(F\) con 3 y 5 grados de
-libertad. Cualitativamente hablando,es similar a una distribución de
+libertad. Cualitativamente hablando, es similar a una distribución de
 chi-cuadrado, pero por lo general el significado no es el mismo.}
 \end{figure}
 
@@ -1131,64 +1084,49 @@ la distribución normal y entre sí, y porque se convertirán en las
 distribuciones importantes al hacer análisis estadísticos inferenciales
 en este curso, creo que es útil hacer una pequeña demostración de cómo
 estas distribuciones realmente están relacionadas entre sí. Primero,
-veamos una variable \texttt{normal.a} que tiene 1000 observaciones
-aleatorias distribuidas normalmente:
+imagina que tenemos un conjunto de 1,000 observaciones aleatorias
+distribuidas normalmente al cual llamamos ``Muestra A''.
 
-\texttt{r\ \ \ normal.a\ \textless{}-\ rnorm(\ n=1000,\ mean=0,\ sd=1\ )\ \ \ \ \ print(head(normal.a))\ \ \ hist(\ normal.a\ )}
-La variable \texttt{normal.a} contiene 1000 números que se distribuyen
-normalmente, y tienen una media de 0 y desviación estándar 1. En la
-Figura \ref{fig:variaterelations} podemos ver un histograma con la
-distribución de los valores organizados por columnas así como una línea
-negra sólida que representa la distribución verdadera de los datos (es
-decir, una distribución normal con media 0 y desviación estándar 1). Así
-podemos comparar los datos recién generados con los de una distribución
-normal verdadera.
+Por lo tanto, la ``Muestra A'' es una variable que contiene 1,000
+números que se distribuyen normalmente, y tienen una media de 0 y
+desviación estándar 1. En la Figura \ref{fig:distnormal} podemos ver un
+histograma con la distribución de los valores organizados por columnas
+así como una línea negra sólida que representa la distribución verdadera
+de los datos (es decir, una distribución normal con media 0 y desviación
+estándar 1. Así podemos comparar los datos recién generados con los de
+una distribución normal verdadera.
 
 \begin{figure}
 \centering
-\includegraphics{FdI2_files/figure-latex/variaterelations-1.pdf}
-\caption{\label{fig:variaterelations}A histogram of different distributions
-with some advanced formatting}
+\includegraphics{FdI2_files/figure-latex/distnormal-1.pdf}
+\caption{\label{fig:distnormal}Distribución normal de la Muestra A}
 \end{figure}
 
-En el primer panel de la Figura podemos observar cómo han sido generados
-muchos valores distribuidos normalmente que luego han sido comparados
-con la distribución de probabilidad verdadera (línea sólida). Supongamos
-que queremos una distribución chi-cuadrada con 3 grados de libertad.
-Como hemos mencionado anteriormente, una distribución chi-cuadrado con
+En la Figura anterior podemos observar cómo han sido generados muchos
+valores distribuidos normalmente que luego han sido comparados con la
+distribución de probabilidad verdadera (línea sólida). Supongamos que
+ahora queremos una distribución chi-cuadrada con 3 grados de libertad.
+Como hemos mencionado anteriormente, una distribución chi-cuadrada con
 \(k\) grados de libertad es es el resultado de tomar \(k\) variables
 normalmente distribuidas (con media 0 y desviación estándar 1),
 elevarlas al cuadrado y sumarlas. Como queremos una distribución de
-chi-cuadrada con 3 grados de libertad, además de nuestra variable
-\texttt{normal.a}, necesitamos dos conjuntos más de valores (también
-distribuidos normalmente). A estas nuevas dos variables las llamaremos
-\texttt{normal.b} y \texttt{normal.c}:
+chi-cuadrada con 3 grados de libertad, además de nuestra ``Muestra A'',
+necesitamos dos conjuntos más de valores (también distribuidos
+normalmente). A estas nuevas dos variables las llamaremos ``Muestra B''
+y ``Muestra C'':
 
-\texttt{r\ \ \ normal.b\ \textless{}-\ rnorm(\ n=1000\ )\ \ \#\ another\ set\ of\ normally\ distributed\ data\ \ \ normal.c\ \textless{}-\ rnorm(\ n=1000\ )\ \ \#\ and\ another!}
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/distchi-1.pdf}
+\caption{\label{fig:distchi}Distribución chi-cuadrada. Incluye a las
+Muestras A, B y C (3 grados de libertad)}
+\end{figure}
+
 Una vez que tenemos las tres variables, la teoría dice que debemos
-elevarlos al cuadrado y sumarlos, así
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{chi.sq.}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\NormalTok{(normal.a)}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{(normal.b)}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{(normal.c)}\OperatorTok{^}\DecValTok{2}  
-\end{Highlighting}
-\end{Shaded}
-
-con lo que la variable \texttt{chi.sq.3} resultante deberá contener 1000
+elevarlos al cuadrado y sumarlos, con lo que obtendremos 1,000
 observaciones que siguen una distribución de chi-cuadrada con 3 grados
 de libertad. Visualmente, obtendremos una distribución como en la Figura
-\ref{fig:variaterelations}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{hist}\NormalTok{( chi.sq.}\DecValTok{3}\NormalTok{ )  }
-\end{Highlighting}
-\end{Shaded}
-
-Es importante entender este concepto -el hecho de que estas
-distribuciones están relacionadas la una con la otra-, ya que después
-nos encontraremos con la distribución chi-cuadrada en el Capítulo
-\ref{chisquare}.
+\ref{fig:distchi}.
 
 Podemos extender esta demostración y tratar de entender el origen de la
 distribución \(t\) y la distribución \(F\). Antes, hemos dicho que la
@@ -1196,47 +1134,39 @@ distribución \(t\) está relacionada con la distribución normal cuando se
 desconoce la media o la desviación estándar. Sin embargo, existe una
 relación más precisa entre las distribuciones normal, chi-cuadrada y
 \(t\). Supongamos que ``escalamos'' nuestros datos anteriores de la
-chi-cuadrada al dividirla entre los grados de libertad, así
+chi-cuadrada al dividirla entre sus 3 grados de libertad.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{scaled.chi.sq.}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\NormalTok{chi.sq.}\DecValTok{3} \OperatorTok{/}\StringTok{ }\DecValTok{3}
-\end{Highlighting}
-\end{Shaded}
+Si tomamos un conjunto de variables normalmente distribuidas (pensemos
+ahora en una ``Muestra D'') y las dividimos por (la raíz cuadrada de)
+nuestra variable chi-cuadrada ``escalada'' que tenía \(k=3\) grados de
+libertad, la operación dará como resultado una distribución \(t\) con 3
+grados de libertad. Si trazamos el histograma de esta nueva distribución
+\(t\), observaremos algo parecido al de la Figura \ref{fig:distt}.
 
-Luego tomamos un nuevo conjunto de variables normalmente distribuidas y
-las dividimos por (la raíz cuadrada de) nuestra variable chi-cuadrada
-que tenía \(k=3\) grados de libertad, lo cual dará como resultado una
-distribución \(t\) con 3 grados de libertad. Si trazamos el histograma
-de esta nueva distribución \texttt{t.3}, observaremos algo parecido a la
-Figura \ref{fig:variaterelations}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{normal.d <-}\StringTok{ }\KeywordTok{rnorm}\NormalTok{( }\DataTypeTok{n=}\DecValTok{1000}\NormalTok{ )                }\CommentTok{# yet another set of normally distributed data}
-\NormalTok{t.}\DecValTok{3}\NormalTok{ <-}\StringTok{ }\NormalTok{normal.d }\OperatorTok{/}\StringTok{ }\KeywordTok{sqrt}\NormalTok{( scaled.chi.sq.}\DecValTok{3}\NormalTok{ )  }\CommentTok{# divide by square root of scaled chi-square to get t}
-\KeywordTok{hist}\NormalTok{ (t.}\DecValTok{3}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/distt-1.pdf}
+\caption{\label{fig:distt}Distribución t. Es el resultado de dividir una
+distribución normal (en este caso la Muestra D) entre una variable
+chi-cuadrada escalada}
+\end{figure}
 
 Del mismo modo, podemos obtener una distribución \(F\) al dividir dos
-distribuciones chi-cuadrada escaladas. Supongamos, por ejemplo, que
-deseamos generar datos a partir de una distribución \(F\) con 3 y 20
-grados de libertad (es decir, con 3 y 20 variables respectivamente).
+distribuciones chi-cuadrada ``escaladas''. Supongamos, por ejemplo, que
+deseamos generar datos que sigan una distribución \(F\) con 3 y 20
+grados de libertad (es decir, con 3 y 20 variables respectivamente). La
+división de los valores de ambas distribuciones nos da como resultado
+una nueva variable \texttt{F.3.20} y su distribución es la que se
+muestra en la Figura \ref{fig:distf}.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{chi.sq.}\DecValTok{20}\NormalTok{ <-}\StringTok{ }\KeywordTok{rchisq}\NormalTok{( }\DecValTok{1000}\NormalTok{, }\DecValTok{20}\NormalTok{)                 }\CommentTok{# generate chi square data with df = 20...}
-\NormalTok{scaled.chi.sq.}\DecValTok{20}\NormalTok{ <-}\StringTok{ }\NormalTok{chi.sq.}\DecValTok{20} \OperatorTok{/}\StringTok{ }\DecValTok{20}             \CommentTok{# scale the chi square variable...}
-\NormalTok{F.}\FloatTok{3.20}\NormalTok{ <-}\StringTok{  }\NormalTok{scaled.chi.sq.}\DecValTok{3}  \OperatorTok{/}\StringTok{ }\NormalTok{scaled.chi.sq.}\DecValTok{20} \CommentTok{# take the ratio of the two chi squares...}
-\KeywordTok{hist}\NormalTok{( F.}\FloatTok{3.20}\NormalTok{ )                                 }\CommentTok{# ... and draw a picture}
-\end{Highlighting}
-\end{Shaded}
-
-La división de los valores de ambas distribuciones nos da como resultado
-una nueva variable \texttt{F.3.20} y su distrubución se ilustra en la
-Figura \ref{fig:variaterelations}, en conjunto con la distribución \(F\)
-verdadera para \(df_1 = 3\) y \(df_2 = 20\).
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/distf-1.pdf}
+\caption{\label{fig:distf}Distribución F. En este ejemplo hipotético, se
+compara la distribución chi-cuadrada de 3 grados de libertad previa con
+otra distribución chi-cuadrada con 20 grados de libertad (es decir, que
+incluye 20 muestras o variables)}
+\end{figure}
 
 Hemos visto tres nuevas distribuciones: \(\chi^2\), \(t\) y \(F\). Todas
 son distribuciones continuas, y todas están estrechamente relacionadas
@@ -1250,8 +1180,7 @@ la distribución normal. Más adelante en el curso nos vamos a encontrar
 con datos que se distribuyen normalmente, o que al menos suponemos que
 se distribuyen normalmente. Por lo tanto, si suponemos que nuestros
 datos se distribuyen normalmente, debemos saber reconocer las
-distribuciones \(\chi^2\), \(t\) y \(F\) cuando realicemos análisis de
-datos.
+distribuciones \(\chi^2\), \(t\) y \(F\)..
 
 \section{Resumen}\label{resumen}
 
@@ -1292,11 +1221,8 @@ Los conceptos básicos que hemos adquirido en este capítulo servirán como
 fundamento para los siguientes dos. Existen muchas reglas sobre lo que
 se nos ``permite'' decir cuando hacemos inferencia estadística, y muchas
 de ellas pueden parecer arbitrarias. Sin embargo, veremos que comienzan
-a tener sentido si entiendemos que existe la distinción
-bayesiana/frecuentista. Del mismo modo, en el Capítulo \ref{ttest} vamos
-a hablar sobre la prueba \(t\), y si realmente queremos entender el
-concepto de la prueba \(t\), el haber entendido qué es y cómo se ve
-realmente una distribución \(t\) nos será de gran ayuda.
+a tener sentido si tenemos en cuenta estos conceptos básicos que hemos
+aprendido.
 
 \bibliography{book.bib,packages.bib}
 
