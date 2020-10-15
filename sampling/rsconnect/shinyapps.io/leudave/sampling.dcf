@@ -1,0 +1,12 @@
+name: sampling
+title: sampling
+username:
+account: leudave
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2952832
+bundleId: 3708061
+url: https://leudave.shinyapps.io/sampling/
+when: 1601982094.63562
+asMultiple: FALSE
+asStatic: FALSE
