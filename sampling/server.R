@@ -296,7 +296,7 @@ shinyServer(function(input, output, session) {
     
     if (input$display) {
       str1 = paste("Media de ", input$statistic, "s muestrales= ", round(mean(draw.sample$sample.statistics),2), sep="")
-      str2 = paste("Desviación estándar de ",input$statistic, "s muestrales= ", round(sd(draw.sample$sample.statistics),2), sep="")
+      str2 = paste("Error estándar= ", round(sd(draw.sample$sample.statistics),2), sep="")
       
       HTML(paste(str1, str2, sep = '<br/>'))
     }
