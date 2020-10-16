@@ -187,4 +187,5 @@ UpdateGitHub <- function(repo=getwd(), untracked=TRUE, stage=TRUE, commit=TRUE, 
 UpdateGitHub()
 
 # Run this script in the Console
+#bookdown::publish_book(render = 'local')
 # source(paste0(getwd(),"/","UpdateGitHub.R"))
