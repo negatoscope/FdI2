@@ -36,46 +36,6 @@
 \fi
 \usepackage{natbib}
 \bibliographystyle{apalike}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -130,7 +90,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-10-15}
+    \date{2020-10-16}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -1264,8 +1224,7 @@ de ellas pueden parecer arbitrarias. Sin embargo, veremos que comienzan
 a tener sentido si tenemos en cuenta estos conceptos básicos que hemos
 aprendido.
 
-\chapter{Estimando cantidades desconocidas de una
-muestra}\label{estimation}
+\chapter{Estimación}\label{estimation}
 
 Al comienzo del capítulo inicial, vimos la distinción que existe entre
 la \emph{estadística descriptiva} y la \emph{estadística inferencial}.
@@ -1275,7 +1234,7 @@ inferencial es ``aprender lo que no sabemos a partir de lo que
 hacemos''. Ahora que tenemos cierto conocimiento sobre la teoría de la
 probabilidad, podemos pensar en el problema de la inferencia
 estadística. ¿Qué tipo de información nos gustaría conocer o aprender?
-¿Y cómo lo aprendemo? Estas son las preguntas que se encuentran en el
+¿Y cómo lo aprendemos? Estas son las preguntas que se encuentran en el
 corazón de la estadística inferencial y tradicionalmente se dividen en
 dos ``grandes ideas'': la estimación y la prueba o contraste de
 hipótesis. El objetivo de este capítulo es presentar la primera de estas
@@ -1329,22 +1288,22 @@ general, es \emph{mucho} más grande que la muestra. En un mundo ideal,
 el investigador comenzaría el estudio con una idea clara de cuál es la
 población de interés, ya que el proceso de diseñar un estudio y probar
 una hipótesis sobre los datos que produce depende de la población sobre
-la que se quiere hacer declaraciones. Sin embargo, en la práctica esto
-no sucede siempre: por lo general, el investigador tiene una idea
-bastante vaga de lo que es la población y diseña el estudio lo mejor que
-puede sobre esa base.
+la que se quiere hacer afirmaciones. Sin embargo, en la práctica esto no
+sucede siempre: por lo general, el investigador tiene una idea bastante
+vaga de lo que es la población y diseña el estudio lo mejor que puede
+sobre esa base.
 
 A veces es fácil indicar cuál es la población de interés. En el ejemplo
 de la ``empresa de encuestas'' que vimos en el capítulo anterior, la
 población consistía en todos los votantes inscritos en un momento del
 estudio: varios millones de personas. En cambio, la muestra fue un
-conjunto de 1000 personas que pertenecen todas a esa población. Sin
-embargo, en la mayoría de los casos, esta definición muestra/población
-no es tan fácil. En estudios o experimentos con seres humanos,
-determinar la población de interés es un poco más complicado. Supongamos
-que realizo un experimento con 100 estudiantes de pregrado que
-representan mi muestra. Mi objetivo es, por ejemplo, intentar aprender
-algo sobre cómo una intervención modifica la dinámica de una clase.
+conjunto de 1,000 personas que pertenecen todas a esa población. Sin
+embargo, en la mayoría de los casos, definir esta muestra/población no
+es tan fácil. En estudios o experimentos con seres humanos, determinar
+la población de interés es un poco más complicado. Supongamos que
+realizo un experimento con 100 estudiantes de pregrado que representan
+mi muestra. Mi objetivo es, por ejemplo, intentar aprender algo sobre
+cómo una intervención educativa modifica la dinámica de una clase.
 Tomando en cuento a la muestra que tenemos, ¿cuál de las siguientes
 opciones contará como ``la población''?:
 
@@ -1375,7 +1334,7 @@ no es tan obvio cuál debería ser la verdadera población de interés.
 simples}\label{muestras-aleatorias-simples}
 
 \begin{figure}
-\includegraphics[width=12.86in]{img/estimation/srs1} \caption{Simple random sampling without replacement from a finite population}\label{fig:srs1}
+\includegraphics[width=12.86in]{img/estimation/srs1} \caption{Muestreo aleatorio simple *sin* reemplazo de una población finita.}\label{fig:srs1}
 \end{figure}
 
 Independientemente de cómo definamos a una población, la clave es que la
@@ -1387,7 +1346,7 @@ muestra. Este procedimiento se conoce como \textbf{\emph{método de
 muestreo}} y es importante comprender su importancia.
 
 Pongamos un ejemplo sencillo. Imaginemos que tenemos una bolsa que
-contiene 10 fichas. Cada ficha tiene una letra única impresa, por lo que
+contiene 10 fichas. Cada ficha tiene una letra única impresa, con la que
 la podemos distinguir de entre las otras 10 fichas. Las fichas vienen en
 dos colores, blanco y negro. Este conjunto de fichas es la población de
 interés y se muestra gráficamente a la izquierda de la Figura
@@ -1429,11 +1388,11 @@ conjunto de datos provenga de una muestra aleatoria simple, ya que
 facilita \emph{mucho} el análisis de los datos.
 
 \begin{figure}
-\includegraphics[width=12.81in]{img/estimation/brs} \caption{Biased sampling without replacement from a finite population}\label{fig:brs}
+\includegraphics[width=12.81in]{img/estimation/brs} \caption{Muestreo sesgado sin reemplazo de una población finita.}\label{fig:brs}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=12.94in]{img/estimation/srs2} \caption{Simple random sampling *with* replacement from a finite population}\label{fig:srs2}
+\includegraphics[width=12.94in]{img/estimation/srs2} \caption{Muestreo aleatorio simple *con* reemplazo de una población finita.}\label{fig:srs2}
 \end{figure}
 
 Vale la pena mencionar un tercer procedimiento. Esta vez cerramos los
@@ -1458,7 +1417,7 @@ En la vida real, esto rara vez importa. Si la población de interés es
 grande, la diferencia entre el muestreo con y sin reemplazo es demasiado
 pequeña como para preocuparnos. Sin embargo, la diferencia que existe
 entre muestras aleatorias simples y muestras sesgadas no es algo no es
-aglo que podemos ignorar tan facilmente.
+algo que podemos ignorar tan facilmente.
 
 \subsection{La mayoría de las muestras no son muestras aleatorias
 simples}\label{la-mayoria-de-las-muestras-no-son-muestras-aleatorias-simples}
@@ -1470,7 +1429,7 @@ universitarios, el obtener una verdadera muestra aleatoria de estos
 estudiantes los podemos considerar como un milagro menor, aunque al
 final se trate de una población muy específica a partir de la cual
 generalizar. Mencionaré brevemente algunos de los otros tipos de
-muestreo que existen y que solemos encontrar con bastante frecuencia:
+muestreo que existen y que solemos encontrar con frecuencia:
 
 \begin{itemize}
 \item
@@ -1479,7 +1438,7 @@ muestreo que existen y que solemos encontrar con bastante frecuencia:
   diferentes. Quizás sea porque estás realizando un estudio en varios
   paises diferentes, por ejemplo. En lugar de intentar tomar una muestra
   aleatoria de toda la población en su conjunto, recolectamos una
-  muestra aleatoria de cada uno de las subpoblaciones o estratos. El
+  muestra aleatoria de cada una de las subpoblaciones o estratos. El
   muestreo estratificado suele ser más fácil de llevar a cabo que el
   muestreo aleatorio simple, especialmente cuando la población ya está
   dividida en los distintos estratos. También puede ser más eficiente
@@ -1526,8 +1485,8 @@ muestreo que existen y que solemos encontrar con bastante frecuencia:
   interpretación de los resultados, pero no siempre.
 \end{itemize}
 
-\subsection{¿Cuánto importa si no tiene una muestra aleatoria
-simple?}\label{cuanto-importa-si-no-tiene-una-muestra-aleatoria-simple}
+\subsection{¿Cuánto importa si no se tiene una muestra aleatoria
+simple?}\label{cuanto-importa-si-no-se-tiene-una-muestra-aleatoria-simple}
 
 Hemos visto que en muchos casos no es posible recolectar muestras
 aleatorias simples. ¿Eso qué impacto tiene? Un ejemplo de ese impacto lo
@@ -1564,9 +1523,9 @@ habrán tenido experiencias de vida mucho más similares a las
 experiencias de vida de las personas que diseñaron las pruebas de
 capacidad de atención sostenida. Esta experiencia compartida podría
 traducirse fácilmente en creencias similares sobre cómo se debe
-``realizar una prueba'', entre otros. Este tipo de características son
-importantes y pueden, por ejemplo, llevar a una imagen engañosa de lo
-que es la capacidad atención sostenida.
+``realizar una prueba'', entre otras razones. Este tipo de
+características son importantes y podrían, por ejemplo, llevar a una
+imagen engañosa de lo que es la capacidad atención sostenida.
 
 Existe un reflexión clave oculta en esta discusión. Al diseñar estudios,
 es importante pensar en la población de interés y en esforzarse por
@@ -1606,42 +1565,25 @@ toda la población. Es decir, decimos que la media de la población
 \(\mu\) es 100, y la desviación estándar de la población \(\sigma\) es
 15.
 
-\includegraphics{FdI2_files/figure-latex/IQdist-1.pdf}
-\includegraphics{FdI2_files/figure-latex/IQdist-2.pdf}
-
-\begin{verbatim}
-## [1] "n= 5 mean= 95.0439814361422 sd= 15.8950870458079"
-\end{verbatim}
-
-\begin{figure}
-\centering
-\includegraphics{FdI2_files/figure-latex/IQdist-3.pdf}
-\caption{\label{fig:IQdist3}Distribución poblacional de los puntajes de CI
-(Panel A) y dos muestra extraídas de forma aleatoria de esta población.
-En el Panel B una muestra con 100 observaciones y en el Panel C una
-muestra con 10,000 observaciones.}
-\end{figure}
-
-\begin{verbatim}
-## [1] "n= 5000 mean= 100.001142624934 sd= 15.115479046001"
-\end{verbatim}
+\includegraphics{FdI2_files/figure-latex/IQdista-1.pdf}
+\includegraphics{FdI2_files/figure-latex/IQdistb-1.pdf}
 
 Supongamos que hacemos un experimento. Seleccionamos 100 personas al
 azar para que elaboren nuestro test de CI, lo cual me dará una muestra
-aleatoria de la población. Mi muestra consistirá de una serie de números
+aleatoria de la población. Mi muestra consistirá en una serie de números
 como estos:
 
 \begin{verbatim}
                           106 101 98 80 74 ... 107 72 100
 \end{verbatim}
 
-Estos puntajes son una muestra extraída de una población con
-distribución norma, media de 100 y desviación estándar de 15. Si
+Estos puntajes forman parte de una muestra extraída de una población con
+distribución normal, media de 100 y desviación estándar de 15. Si
 trazamos un histograma de esta muestra, obtendremos algo como el que se
-muestra en la Figura \ref{fig:IQdist}b. Podemos ver que el histograma
+muestra en la Figura \ref{fig:IQdistb}. Podemos ver que el histograma
 tiene una forma \emph{aproximadamente} normal, pero aún queda como una
 aproximación burda de la verdadera distribución de la población que se
-muestra en la Figura \ref{fig:IQdist}a. Si calculamos la media muestral,
+muestra en la Figura \ref{fig:IQdista}. Si calculamos la media muestral,
 obtendremos un número que está bastante cerca de la media de la
 población 100, pero no es idéntico. En este caso, vemos que las personas
 de mi muestra tienen un CI medio de 98,5 y la desviación estándar de sus
@@ -1661,24 +1603,31 @@ conceptos adicionales sobre la teoría de muestreo.
 
 En la sección anterior vimos los resultados de un experimento ficticio
 con un tamaño de muestra de \(N=100\). Los resultados fueron algo
-alentadores: la media real de la población es 100 y la media muestral
-98.5, una aproximación razonable. En muchos estudios científicos, este
-nivel de precisión es perfectamente aceptable, pero existen situaciones
-en las que nos gustaría ser bastante más precisos. Si queremos que
-nuestros estadísticos muestrales se acerquen más a los parámetros
-poblaciones, ¿qué podemos hacer al respecto?
+alentadores: la media real de la población es 100,,mientras que la media
+muestral fue de 98.5, una aproximación razonable. En muchos estudios
+científicos, este nivel de precisión es perfectamente aceptable, pero
+existen situaciones en las que nos gustaría ser bastante más precisos.
+Si queremos que nuestros estadísticos muestrales se acerquen más a los
+parámetros poblacionales, ¿qué podemos hacer al respecto?
 
 La respuesta lógica sería recolectar más datos. Supongamos que hacemos
 un experimento más grande, en el cual medimos el CI de 10,000 personas.
 Si entrás \href{https://leudave.shinyapps.io/sampling/}{aquí} podrás
 hacer una simulación. El histograma de esta simulación se muestra en la
-Figura \ref{fig:IQdist}c. Una inspección rápida nos revelará que una
-muestra de mayor tamaño es representa una mucho mejor aproximación la
+Figura \ref{fig:IQdistc}. Una inspección rápida nos revelará que una
+muestra de mayor tamaño representa una mejor aproximación a la
 distribución poblacional real, especialmente si la comparamos con la
 muestra más pequeña. Esto también se ve reflejado en los estadísticos
 muestrales: el CI medio de la muestra grande es de 99.9 y su desviación
 estándar es de 15.1. Estos valores son muy cercanos a los valores reales
 de la población.
+
+\begin{figure}
+\centering
+\includegraphics{FdI2_files/figure-latex/IQdistc-1.pdf}
+\caption{\label{fig:IQdistc}Muestra con 10,000 observaciones provenientes de
+la distribución poblacional previa.}
+\end{figure}
 
 Con esto, podemos observar algo que parece obvio: entre más datos
 tengamos, mejores resultados obtendremos. Esta intuición tan evidente
@@ -1732,9 +1681,8 @@ muestral de una muestra modesta como la nuestra.
 \subsection{Distribución muestral de la media}\label{samplingdists}
 
 Abandonemos por un momento la idea de tener tamaños de muestra de 10,000
-y pensemos en un experimento más modesto (y realista). Esta vez
-extraemos una muestra de \(N=5\) personas y medimos su CI. Este es el
-resultado:
+y pensemos en un experimento más modesto. Esta vez extraemos una muestra
+de \(N=5\) personas y medimos su CI. Este es el resultado:
 
 \begin{verbatim}
 90  82  94  99 110
@@ -1753,8 +1701,8 @@ son los CI de nuestra nueva muestra:
 
 Al calcular la media de esta muestra vemos que es de 101. Si repetimos
 el experimento 10 veces más obtendremos los resultados que se muestran
-en la Tabla \ref{tab:replications}. Con ella podrás que la media muestra
-cambia con cada replicación del experimento.
+en la siguiente Tabla. Con ella podrás ver que la media muestral cambia
+con cada replicación del experimento.
 
 \begin{tabular}{l|r|r|r|r|r|r}
 \hline
@@ -1784,9 +1732,9 @@ Rep 10 & 95 & 126 & 112 & 120 & 76 & 105.8\\
 
 Supongamos ahora que decidimos continuar con este procedimiento,
 replicando el experimento de ``5 puntuaciones de CI'' una y otra vez. Y
-cada vez, obtendremos una media muestra diferente, que en el caso de los
-10 experimentos que ya hemos hecho corresponderían con los siguientes
-valores:
+cada vez, obtendremos una media muestral diferente, que en el caso de
+los 10 experimentos que ya hemos hecho corresponderían con los
+siguientes valores:
 
 \begin{verbatim}
                       95.0 101.0 101.6 103.8 104.4 ...
@@ -1795,20 +1743,18 @@ valores:
 ¿Qué pasaría si continuamos y recolectamos 10,000 medias muestrales y
 trazamos un histograma con ellas? Obtendríamos un resultado como el que
 vemos en la Figura \ref{fig:sampdistmean}. En esta imagen podemos
-apreciar que la media muestral de 5 puntuaciones de CI se encuentra, por
-lo general, entre 90 y 110. Pero lo más interesante de esta Figura es
-que demuestra el hecho de que si repetimos el experimento una y otra
+apreciar que la media muestral de ``5 puntuaciones de CI'' se encuentra,
+por lo general, entre 90 y 110. Pero lo más interesante de esta Figura
+es que demuestra el hecho de que si repetimos el experimento una y otra
 vez, ¡lo que obtenemos es una \emph{distribución} de las medias
 muestrales! Esta distribución recibe un nombre especial en estadística:
 se le llama \textbf{\emph{distribución muestral de la media}}.
 
-La distribuciones muestrales
-
 Las distribuciones muestrales son una idea teórica importante en la
 estadística, y además, son cruciales si queremos entender cómo se
-comportan las muestras pequeñas. Por ejempo, cuando realizamos el primer
-experimento con 5 puntuaciones de CI, la media muestral fue de 95. Sin
-embargo, lo que la distribución muestral nos dice en la Figura
+comportan las muestras pequeñas. Por ejemplo, cuando realizamos el
+primer experimento con 5 puntuaciones de CI, la media muestral fue de
+95. Sin embargo, lo que la distribución muestral nos dice en la Figura
 \ref{fig:sampdistmean}, es que este experimento con 5 puntuaciones no es
 muy preciso. Si repetimos el experimento muchas veces, la distribución
 muestral nos dice que podemos esperar que la media muestral esté entre
@@ -1825,788 +1771,166 @@ que tienen un CI mayor de 120 o menor de 80. La línea negra dibuja la
 distribución poblacional de los puntajes de CI para comparar.}
 \end{figure}
 
-\subsection{Sampling distributions exist for any sample
-statistic!}\label{sampling-distributions-exist-for-any-sample-statistic}
+\subsection{Existen distribuciones muestrales para cualquier estadístico
+muestral}\label{existen-distribuciones-muestrales-para-cualquier-estadistico-muestral}
 
-One thing to keep in mind when thinking about sampling distributions is
-that \emph{any} sample statistic you might care to calculate has a
-sampling distribution. For example, suppose that each time I replicated
-the ``five IQ scores'' experiment I wrote down the largest IQ score in
-the experiment. This would give me a data set that started out like
-this:
+Una cosa que debemos tener en cuenta cuando pensemos sobre las
+distribuciones muestrales es que es posible estimarlos a partir de
+\emph{cualquier} estadístico muestral. Por ejemplo, supongamos que en
+cada una de las veces que replicamos el ``experimento con 5 puntajes de
+CI'' también tomamos nota del valor de CI máximo en cada experimento.
+Esto daría como resultado una serie de número que empezaría de esta
+forma:
 
 \begin{verbatim}
                       110 117 122 119 113 ... 
 \end{verbatim}
 
-Doing this over and over again would give me a very different sampling
-distribution, namely the \emph{sampling distribution of the maximum}.
-The sampling distribution of the maximum of 5 IQ scores is shown in
-Figure \ref{fig:sampdistmax}. Not surprisingly, if you pick 5 people at
-random and then find the person with the highest IQ score, they're going
-to have an above average IQ. Most of the time you'll end up with someone
-whose IQ is measured in the 100 to 140 range.
+Si hacemos esto una y otra vez obtendremos una distribución muestral muy
+diferente, concretamente la \emph{distribución muestral del valor
+máximo}. La distribución muestral del valor máximo de 5 puntajes de CI
+se muestra en la Figura \ref{fig:sampdistmax}. No es de sorprender, que
+si escogemos a 5 personas al azar y seleccionamos a la persona con el
+puntaje más alto, este tenga un CI superior a la media. Y de hecho, la
+mayoría de las veces nos encontraremos con puntajes de CI en el rango
+entre 100 y 140.
 
-\subsection{The central limit theorem}\label{clt}
+\begin{figure}
+\includegraphics[width=13.08in]{img/estimation/sampdistmax} \caption{Distribución muestral del valor máximo de CI}\label{fig:sampdistmax}
+\end{figure}
 
-An illustration of the how sampling distribution of the mean depends on
-sample size. In each panel, I generated 10,000 samples of IQ data, and
-calculated the mean IQ observed within each of these data sets. The
-histograms in these plots show the distribution of these means (i.e.,
-the sampling distribution of the mean). Each individual IQ score was
-drawn from a normal distribution with mean 100 and standard deviation
-15, which is shown as the solid black line).
+\subsection{El teorema del límite central}\label{clt}
+
+A continuación verás una serie de ilustraciones en las que podremos
+observar como influye el tamaño de la muestra en las distribuciones
+muestrales. Estas distribuciones muestrales se han generado a partir
+10,000 muestras de datos sobre el CI, donde se ha calculado la media
+muestral de cada una de esas muestras. Los histogramas muestran la
+distribución de esas medias muestrales (en otras palabras, son
+distribuciones muestrales de la media). Cada valor individual de CI fue
+extraído de una distribución normal con media de 100 y desviación
+estándar de 15, que se muestra como una línea sólida de color negro.
 
 \begin{figure}
 \centering
 \includegraphics{FdI2_files/figure-latex/IQsampa-1.pdf}
-\caption{\label{fig:IQsampa}Each data set contained only a single
-observation, so the mean of each sample is just one person's IQ score.
-As a consequence, the sampling distribution of the mean is of course
-identical to the population distribution of IQ scores.}
+\caption{\label{fig:IQsampa}Esta distribución muestral parte de una sola
+observación (tamaño muestral de 1), de forma que la media muestral es el
+puntaje de CI de una persona. Como consecuencia, la distribución
+muestral de la media es idéntica a la distribución poblacional de los
+valores de CI.}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics{FdI2_files/figure-latex/IQsampb-1.pdf}
-\caption{\label{fig:IQsampb}When we raise the sample size to 2, the mean of
-any one sample tends to be closer to the population mean than a one
-person's IQ score, and so the histogram (i.e., the sampling
-distribution) is a bit narrower than the population distribution.}
+\caption{\label{fig:IQsampb}Cuando aumentamos el tamaño de la muestra a 2,
+la media de cualquier muestra tiende a acercarse más a la media
+poblacional que a un puntaje individual de CI, por lo que el histograma
+(distribución muestral) es un poco más estrecho que el de la
+distribución de la población.}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics{FdI2_files/figure-latex/IQsampc-1.pdf}
-\caption{\label{fig:IQsampc}By the time we raise the sample size to 10, we
-can see that the distribution of sample means tend to be fairly tightly
-clustered around the true population mean.}
-\end{figure}
+\includegraphics{FdI2_files/figure-latex/IQsampc-1.pdf} Espero que con
+esta demostración, tengas un mejor idea de lo que son las distribuciones
+muestrales, y en particular lo que es la distribución muestral de la
+media. En esta sección hablaremos de cómo la distribución muestral de la
+media cambia en función del tamaño muestral. Intuitivamente tú ya
+conoces la respuesta: si tenemos sólo unas cuantas observaciones, es
+probable que la media muestral no sea muy precisa. Si replicas este
+experimento con una muestra pequeña y vuelves a calcular la media
+obtendrás, casi con seguridad, una respuesta muy diferente. En otras
+palabras, su distribución muestral es muy ancha. Por otro lado, si
+replicas un experimento con un tamaño muestral grande y calculas la
+media muestral varias veces, es muy probable que obtengas la misma
+respuesta, o al menos muy aproximada, por lo que la distribución
+muestral será muy estrecha. Esto lo puedes apreciar visualmente con las
+Figuras \ref{fig:IQsampa}, \ref{fig:IQsampb} y \ref{fig:IQsampc}: entre
+más grande sea la muestra, más estrecha será la distribución muestral.
+Podemos cuantificar este efecto si calculamos la desviación estándar de
+la distribución muestral, mejor conocida como el \textbf{\emph{error
+estándar}}. El error estándar de la media se denota como \(\sigma\) con
+el subíndice \(\bar{X}\) (o SEM en inglés). Y como puedes ver y
+confirmar con las figuras, conforme aumenta el tamaño muestral \(N\), el
+error estándar disminuye.
 
-At this point I hope you have a pretty good sense of what sampling
-distributions are, and in particular what the sampling distribution of
-the mean is. In this section I want to talk about how the sampling
-distribution of the mean changes as a function of sample size.
-Intuitively, you already know part of the answer: if you only have a few
-observations, the sample mean is likely to be quite inaccurate: if you
-replicate a small experiment and recalculate the mean you'll get a very
-different answer. In other words, the sampling distribution is quite
-wide. If you replicate a large experiment and recalculate the sample
-mean you'll probably get the same answer you got last time, so the
-sampling distribution will be very narrow. You can see this visually in
-Figures \ref{fig:IQsampa}, \ref{fig:IQsampb} and \ref{fig:IQsampc}: the
-bigger the sample size, the narrower the sampling distribution gets. We
-can quantify this effect by calculating the standard deviation of the
-sampling distribution, which is referred to as the
-\textbf{\emph{standard error}}. The standard error of a statistic is
-often denoted SE, and since we're usually interested in the standard
-error of the sample \emph{mean}, we often use the acronym SEM. As you
-can see just by looking at the picture, as the sample size \(N\)
-increases, the SEM decreases.
+De momento hemos visto cómo se comportan las distribuciones muestrales
+de los puntajes de CI, que es un parámetro que tiene una distribución
+poblacional normal. Pero, ¿qué pasa con aquellos datos que no guardan
+una distribución normal? Esta es la clave: sin importar la forma de la
+distribución de la población, si aumentamos \(N\), su distribución
+muestral siempre será como la que hemos visto con la distribución
+normal. Por ejemplo, en la Figura \ref{fig:cltdemo} verás que una
+distribución poblacional que tiene forma de rampa (los valores más altos
+son los más frecuentes). Si comparas esta forma con la de la
+distribución normal (la línea sólida negra), podrás confirmar que no se
+parecen en nada. Si repetimos el mismo procedimiento que hemos hecho
+anteriormente, y extraemos un número elevado de muestras (10,000) con un
+tamaño muestral de \(N=2\) y calculamos sus medias muestrales,
+obtendremos la distribución muestral de la media que puedes ver en la
+Figura \ref{fig:cltdemob}. Esta distribución cambia de forma de manera
+importante, y aunque no es normal, se aproxima bastante, sobre todo si
+la comparamos con la distribución poblacional original (Figura
+\ref{fig:cltdemoa}). Si aumentamos el tamaño muestral a \(N=4\), la
+distribución muestral de la media se acerca más a una distribución
+normal (Figura \ref{fig:cltdemoc}, y con un tamaño muestral de \(N=8\)
+esta ya es perfectamente normal. En otras palabras, siempre y cuando el
+tamaño de tu muestra no sea diminuto, la distribución muestral de la
+media será normal, ¡sin importar la forma de la distribución
+poblacional!
 
-Okay, so that's one part of the story. However, there's something I've
-been glossing over so far. All my examples up to this point have been
-based on the ``IQ scores'' experiments, and because IQ scores are
-roughly normally distributed, I've assumed that the population
-distribution is normal. What if it isn't normal? What happens to the
-sampling distribution of the mean? The remarkable thing is this: no
-matter what shape your population distribution is, as \(N\) increases
-the sampling distribution of the mean starts to look more like a normal
-distribution. To give you a sense of this, I ran some simulations using
-R. To do this, I started with the ``ramped'' distribution shown in the
-histogram in Figure \ref{fig:cltdemo}. As you can see by comparing the
-triangular shaped histogram to the bell curve plotted by the black line,
-the population distribution doesn't look very much like a normal
-distribution at all. Next, I used R to simulate the results of a large
-number of experiments. In each experiment I took \(N=2\) samples from
-this distribution, and then calculated the sample mean. Figure
-\ref{fig:cltdemob} plots the histogram of these sample means (i.e., the
-sampling distribution of the mean for \(N=2\)). This time, the histogram
-produces a \(\cap\)-shaped distribution: it's still not normal, but it's
-a lot closer to the black line than the population distribution in
-Figure \ref{fig:cltdemoa}. When I increase the sample size to \(N=4\),
-the sampling distribution of the mean is very close to normal (Figure
-\ref{fig:cltdemoc}, and by the time we reach a sample size of \(N=8\)
-it's almost perfectly normal. In other words, as long as your sample
-size isn't tiny, the sampling distribution of the mean will be
-approximately normal no matter what your population distribution looks
-like!
-
-\begin{Shaded}
-\begin{Highlighting}[]
-    \CommentTok{# needed for printing}
-\NormalTok{    width <-}\StringTok{ }\DecValTok{6}
-\NormalTok{    height <-}\StringTok{ }\DecValTok{6} 
-    
-    \CommentTok{# parameters of the beta}
-\NormalTok{    a <-}\StringTok{ }\DecValTok{2}
-\NormalTok{    b <-}\StringTok{ }\DecValTok{1}
-    
-    \CommentTok{# mean and standard deviation of the beta}
-\NormalTok{    s <-}\StringTok{ }\KeywordTok{sqrt}\NormalTok{( a}\OperatorTok{*}\NormalTok{b }\OperatorTok{/}\StringTok{ }\NormalTok{(a}\OperatorTok{+}\NormalTok{b)}\OperatorTok{^}\DecValTok{2} \OperatorTok{/}\StringTok{ }\NormalTok{(a}\OperatorTok{+}\NormalTok{b}\OperatorTok{+}\DecValTok{1}\NormalTok{) )}
-\NormalTok{    m <-}\StringTok{ }\NormalTok{a }\OperatorTok{/}\StringTok{ }\NormalTok{(a}\OperatorTok{+}\NormalTok{b)}
-    
-    \CommentTok{# define function to draw a plot}
-\NormalTok{    plotOne <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(n,}\DataTypeTok{N=}\DecValTok{10000}\NormalTok{) \{}
-        
-        \CommentTok{# generate N random sample means of size n}
-\NormalTok{        X <-}\StringTok{ }\KeywordTok{matrix}\NormalTok{(}\KeywordTok{rbeta}\NormalTok{(n}\OperatorTok{*}\NormalTok{N,a,b),n,N)}
-\NormalTok{        X <-}\StringTok{ }\KeywordTok{colMeans}\NormalTok{(X)}
-        
-        \CommentTok{# plot the data}
-        \KeywordTok{hist}\NormalTok{( X, }\DataTypeTok{breaks=}\KeywordTok{seq}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,.}\DecValTok{025}\NormalTok{), }\DataTypeTok{border=}\StringTok{"white"}\NormalTok{, }\DataTypeTok{freq=}\OtherTok{FALSE}\NormalTok{,}
-            \DataTypeTok{col=}\KeywordTok{ifelse}\NormalTok{(colour,emphColLight,emphGrey),}
-            \DataTypeTok{xlab=}\StringTok{"Media muestral"}\NormalTok{, }\DataTypeTok{ylab=}\StringTok{""}\NormalTok{, }\DataTypeTok{xlim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\FloatTok{1.2}\NormalTok{),}
-            \DataTypeTok{main=}\KeywordTok{paste}\NormalTok{(}\StringTok{"Tamaño de la muestra ="}\NormalTok{,n), }\DataTypeTok{axes=}\OtherTok{FALSE}\NormalTok{,}
-            \DataTypeTok{font.main=}\DecValTok{1}\NormalTok{, }\DataTypeTok{ylim=}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{12}\NormalTok{)}
-\NormalTok{        )}
-        \KeywordTok{box}\NormalTok{()}
-        \KeywordTok{axis}\NormalTok{(}\DecValTok{1}\NormalTok{)}
-        \CommentTok{#axis(2)}
-        
-        \CommentTok{# plot the theoretical distribution}
-        \KeywordTok{lines}\NormalTok{( x <-}\StringTok{ }\KeywordTok{seq}\NormalTok{(}\DecValTok{0}\NormalTok{,}\FloatTok{1.2}\NormalTok{,.}\DecValTok{01}\NormalTok{), }\KeywordTok{dnorm}\NormalTok{(x,m,s}\OperatorTok{/}\KeywordTok{sqrt}\NormalTok{(n)), }
-            \DataTypeTok{lwd=}\DecValTok{2}\NormalTok{, }\DataTypeTok{col=}\StringTok{"black"}\NormalTok{, }\DataTypeTok{type=}\StringTok{"l"}
-\NormalTok{        )}
-\NormalTok{    \}}
-    
-    \ControlFlowTok{for}\NormalTok{( i }\ControlFlowTok{in} \KeywordTok{c}\NormalTok{(}\DecValTok{50}\NormalTok{)) \{}
-        \KeywordTok{plotOne}\NormalTok{(i)\}}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-\centering
 \includegraphics{FdI2_files/figure-latex/cltdemo-1.pdf}
-\caption{\label{fig:cltdemo}A demonstration of the central limit theorem. In
-panel a, we have a non-normal population distribution; and panels b-d
-show the sampling distribution of the mean for samples of size 2,4 and
-8, for data drawn from the distribution in panel a. As you can see, even
-though the original population distribution is non-normal, the sampling
-distribution of the mean becomes pretty close to normal by the time you
-have a sample of even 4 observations.}
-\end{figure}
+\includegraphics{FdI2_files/figure-latex/cltdemo-2.pdf}
+\includegraphics{FdI2_files/figure-latex/cltdemo-3.pdf}
+\includegraphics{FdI2_files/figure-latex/cltdemo-4.pdf}
 
-On the basis of these figures, it seems like we have evidence for all of
-the following claims about the sampling distribution of the mean:
+Con base en estas figuras, parece que tenemos evidencia suficiente para
+sustentar las siguientes afirmaciones sobre las distribuciones
+muestrales de la media:
 
 \begin{itemize}
 \tightlist
 \item
-  The mean of the sampling distribution is the same as the mean of the
-  population
+  La media de una distribución muestral es igual a la media poblacional
 \item
-  The standard deviation of the sampling distribution (i.e., the
-  standard error) gets smaller as the sample size increases
+  La desviación estándar de una distribución muestral (el error
+  estándar) disminuye conforme aumenta el tamaño muestral
 \item
-  The shape of the sampling distribution becomes normal as the sample
-  size increases
+  La forma de una distribución muestral adquiere una forma normal o de
+  campana conforme aumenta el tamaño muestral
 \end{itemize}
 
-As it happens, not only are all of these statements true, there is a
-very famous theorem in statistics that proves all three of them, known
-as the \textbf{\emph{central limit theorem}}. Among other things, the
-central limit theorem tells us that if the population distribution has
-mean \(\mu\) and standard deviation \(\sigma\), then the sampling
-distribution of the mean also has mean \(\mu\), and the standard error
-of the mean is \[
+Estas tres afirmaciones que hemos deducido, pueden ser comprobadas a
+través de un teorema muy famoso en estadística, conocido como el
+\textbf{\emph{teorema del límite central}}. Entre otras cosas, el
+teorema del límite central nos dice que si una distribución poblacional
+tiene una media \(\mu\) y una desviación estándar \(\sigma\), entonces
+la distribución muestral de la media también tendra una media \(\mu\) y
+un error estándar de la media:
+
+\[
 \mbox{SEM} = \frac{\sigma}{ \sqrt{N} }
-\] Because we divide the population standard devation \(\sigma\) by the
-square root of the sample size \(N\), the SEM gets smaller as the sample
-size increases. It also tells us that the shape of the sampling
-distribution becomes normal.\footnote{As usual, I'm being a bit sloppy
-  here. The central limit theorem is a bit more general than this
-  section implies. Like most introductory stats texts, I've discussed
-  one situation where the central limit theorem holds: when you're
-  taking an average across lots of independent events drawn from the
-  same distribution. However, the central limit theorem is much broader
-  than this. There's a whole class of things called ``\(U\)-statistics''
-  for instance, all of which satisfy the central limit theorem and
-  therefore become normally distributed for large sample sizes. The mean
-  is one such statistic, but it's not the only one.}
+\] Ya que en esta fórmula se divide la desviación estándar de la
+población \(\sigma\) por la raíz cuadrada del tamaño muestral \(N\), el
+error estándar disminuye conforme aumenta el tamaño muestral. También
+nos dice que la forma de la distribución muestral se vuelve normal.
+\footnote{Hemos explicado el caso de la media muestral que satisface el
+  teorema del límite central. Sin embargo, existen otros estadísticos
+  muestrales que también lo hacen, y que no revisaremos, al ser esto una
+  introducción.}
 
-This result is useful for all sorts of things. It tells us why large
-experiments are more reliable than small ones, and because it gives us
-an explicit formula for the standard error it tells us \emph{how much}
-more reliable a large experiment is. It tells us why the normal
-distribution is, well, \emph{normal}. In real experiments, many of the
-things that we want to measure are actually averages of lots of
-different quantities (e.g., arguably, ``general'' intelligence as
-measured by IQ is an average of a large number of ``specific'' skills
-and abilities), and when that happens, the averaged quantity should
-follow a normal distribution. Because of this mathematical law, the
-normal distribution pops up over and over again in real data.
-
-\section{Estimating population parameters}\label{pointestimates}
-
-In all the IQ examples in the previous sections, we actually knew the
-population parameters ahead of time. As every undergraduate gets taught
-in their very first lecture on the measurement of intelligence, IQ
-scores are \emph{defined} to have mean 100 and standard deviation 15.
-However, this is a bit of a lie. How do we know that IQ scores have a
-true population mean of 100? Well, we know this because the people who
-designed the tests have administered them to very large samples, and
-have then ``rigged'' the scoring rules so that their sample has mean
-100. That's not a bad thing of course: it's an important part of
-designing a psychological measurement. However, it's important to keep
-in mind that this theoretical mean of 100 only attaches to the
-population that the test designers used to design the tests. Good test
-designers will actually go to some lengths to provide ``test norms''
-that can apply to lots of different populations (e.g., different age
-groups, nationalities etc).
-
-This is very handy, but of course almost every research project of
-interest involves looking at a different population of people to those
-used in the test norms. For instance, suppose you wanted to measure the
-effect of low level lead poisoning on cognitive functioning in Port
-Pirie, a South Australian industrial town with a lead smelter. Perhaps
-you decide that you want to compare IQ scores among people in Port Pirie
-to a comparable sample in Whyalla, a South Australian industrial town
-with a steel refinery.\footnote{Please note that if you were
-  \emph{actually} interested in this question, you would need to be a
-  \emph{lot} more careful than I'm being here. You \emph{can't} just
-  compare IQ scores in Whyalla to Port Pirie and assume that any
-  differences are due to lead poisoning. Even if it were true that the
-  only differences between the two towns corresponded to the different
-  refineries (and it isn't, not by a long shot), you need to account for
-  the fact that people already \emph{believe} that lead pollution causes
-  cognitive deficits: if you recall back to Chapter \ref{studydesign},
-  this means that there are different demand effects for the Port Pirie
-  sample than for the Whyalla sample. In other words, you might end up
-  with an illusory group difference in your data, caused by the fact
-  that people \emph{think} that there is a real difference. I find it
-  pretty implausible to think that the locals wouldn't be well aware of
-  what you were trying to do if a bunch of researchers turned up in Port
-  Pirie with lab coats and IQ tests, and even less plausible to think
-  that a lot of people would be pretty resentful of you for doing it.
-  Those people won't be as co-operative in the tests. Other people in
-  Port Pirie might be \emph{more} motivated to do well because they
-  don't want their home town to look bad. The motivational effects that
-  would apply in Whyalla are likely to be weaker, because people don't
-  have any concept of ``iron ore poisoning'' in the same way that they
-  have a concept for ``lead poisoning''. Psychology is \emph{hard}.}
-Regardless of which town you're thinking about, it doesn't make a lot of
-sense simply to \emph{assume} that the true population mean IQ is 100.
-No-one has, to my knowledge, produced sensible norming data that can
-automatically be applied to South Australian industrial towns. We're
-going to have to \textbf{\emph{estimate}} the population parameters from
-a sample of data. So how do we do this?
-
-\subsection{Estimating the population
-mean}\label{estimating-the-population-mean}
-
-Suppose we go to Port Pirie and 100 of the locals are kind enough to sit
-through an IQ test. The average IQ score among these people turns out to
-be \(\bar{X}=98.5\). So what is the true mean IQ for the entire
-population of Port Pirie? Obviously, we don't know the answer to that
-question. It could be \(97.2\), but if could also be \(103.5\). Our
-sampling isn't exhaustive so we cannot give a definitive answer.
-Nevertheless if I was forced at gunpoint to give a ``best guess'' I'd
-have to say \(98.5\). That's the essence of statistical estimation:
-giving a best guess.
-
-In this example, estimating the unknown poulation parameter is
-straightforward. I calculate the sample mean, and I use that as my
-\textbf{\emph{estimate of the population mean}}. It's pretty simple, and
-in the next section I'll explain the statistical justification for this
-intuitive answer. However, for the moment what I want to do is make sure
-you recognise that the sample statistic and the estimate of the
-population parameter are conceptually different things. A sample
-statistic is a description of your data, whereas the estimate is a guess
-about the population. With that in mind, statisticians often different
-notation to refer to them. For instance, if true population mean is
-denoted \(\mu\), then we would use \(\hat\mu\) to refer to our estimate
-of the population mean. In contrast, the sample mean is denoted
-\(\bar{X}\) or sometimes \(m\). However, in simple random samples, the
-estimate of the population mean is identical to the sample mean: if I
-observe a sample mean of \(\bar{X} = 98.5\), then my estimate of the
-population mean is also \(\hat\mu = 98.5\). To help keep the notation
-clear, here's a handy table:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}\NormalTok{,}
-                   \DataTypeTok{Symbol =} \KeywordTok{c}\NormalTok{(}\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{bar\{X\}$"}\NormalTok{, }\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{mu$"}\NormalTok{, }\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{hat\{}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{mu\}$"}\NormalTok{),}
-              \DataTypeTok{What.is.it =} \KeywordTok{c}\NormalTok{(}\StringTok{"Sample mean"}\NormalTok{, }\StringTok{"True population mean"}\NormalTok{,}
-                              \StringTok{"Estimate of the population mean"}\NormalTok{),}
-   \DataTypeTok{Do.we.know.what.it.is =} \KeywordTok{c}\NormalTok{(}\StringTok{"Yes  calculated from the raw data"}\NormalTok{,}
-                              \StringTok{"Almost never known for sure"}\NormalTok{,}
-                              \StringTok{"Yes  identical to the sample mean"}\NormalTok{)))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{tabular}{l|l|l}
-\hline
-Symbol & What.is.it & Do.we.know.what.it.is\\
-\hline
-\$\textbackslash{}bar\{X\}\$ & Sample mean & Yes  calculated from the raw data\\
-\hline
-\$\textbackslash{}mu\$ & True population mean & Almost never known for sure\\
-\hline
-\$\textbackslash{}hat\{\textbackslash{}mu\}\$ & Estimate of the population mean & Yes  identical to the sample mean\\
-\hline
-\end{tabular}
-
-\subsection{Estimating the population standard
-deviation}\label{estimating-the-population-standard-deviation}
-
-So far, estimation seems pretty simple, and you might be wondering why I
-forced you to read through all that stuff about sampling theory. In the
-case of the mean, our estimate of the population parameter (i.e.
-\(\hat\mu\)) turned out to identical to the corresponding sample
-statistic (i.e. \(\bar{X}\)). However, that's not always true. To see
-this, let's have a think about how to construct an
-\textbf{\emph{estimate of the population standard deviation}}, which
-we'll denote \(\hat\sigma\). What shall we use as our estimate in this
-case? Your first thought might be that we could do the same thing we did
-when estimating the mean, and just use the sample statistic as our
-estimate. That's almost the right thing to do, but not quite.
-
-Here's why. Suppose I have a sample that contains a single observation.
-For this example, it helps to consider a sample where you have no
-intutions at all about what the true population values might be, so
-let's use something completely fictitious. Suppose the observation in
-question measures the \emph{cromulence} of my shoes. It turns out that
-my shoes have a cromulence of 20. So here's my sample:
-
-\begin{verbatim}
-20
-\end{verbatim}
-
-This is a perfectly legitimate sample, even if it does have a sample
-size of \(N=1\). It has a sample mean of 20, and because every
-observation in this sample is equal to the sample mean (obviously!) it
-has a sample standard deviation of 0. As a description of the
-\emph{sample} this seems quite right: the sample contains a single
-observation and therefore there is no variation observed within the
-sample. A sample standard deviation of \(s = 0\) is the right answer
-here. But as an estimate of the \emph{population} standard deviation, it
-feels completely insane, right? Admittedly, you and I don't know
-anything at all about what ``cromulence'' is, but we know something
-about data: the only reason that we don't see any variability in the
-\emph{sample} is that the sample is too small to display any variation!
-So, if you have a sample size of \(N=1\), it \emph{feels} like the right
-answer is just to say ``no idea at all''.
-
-Notice that you \emph{don't} have the same intuition when it comes to
-the sample mean and the population mean. If forced to make a best guess
-about the population mean, it doesn't feel completely insane to guess
-that the population mean is 20. Sure, you probably wouldn't feel very
-confident in that guess, because you have only the one observation to
-work with, but it's still the best guess you can make.
-
-Let's extend this example a little. Suppose I now make a second
-observation. My data set now has \(N=2\) observations of the cromulence
-of shoes, and the complete sample now looks like this:
-
-\begin{verbatim}
-20, 22
-\end{verbatim}
-
-This time around, our sample is \emph{just} large enough for us to be
-able to observe some variability: two observations is the bare minimum
-number needed for any variability to be observed! For our new data set,
-the sample mean is \(\bar{X}=21\), and the sample standard deviation is
-\(s=1\). What intuitions do we have about the population? Again, as far
-as the population mean goes, the best guess we can possibly make is the
-sample mean: if forced to guess, we'd probably guess that the population
-mean cromulence is 21. What about the standard deviation? This is a
-little more complicated. The sample standard deviation is only based on
-two observations, and if you're at all like me you probably have the
-intuition that, with only two observations, we haven't given the
-population ``enough of a chance'' to reveal its true variability to us.
-It's not just that we suspect that the estimate is \emph{wrong}: after
-all, with only two observations we expect it to be wrong to some degree.
-The worry is that the error is \emph{systematic}. Specifically, we
-suspect that the sample standard deviation is likely to be smaller than
-the population standard deviation.
-
-This intuition feels right, but it would be nice to demonstrate this
-somehow. There are in fact mathematical proofs that confirm this
-intuition, but unless you have the right mathematical background they
-don't help very much. Instead, what I'll do is use R to simulate the
-results of some experiments. With that in mind, let's return to our IQ
-studies. Suppose the true population mean IQ is 100 and the standard
-deviation is 15. I can use the \texttt{rnorm()} function to generate the
-the results of an experiment in which I measure \(N=2\) IQ scores, and
-calculate the sample standard deviation. If I do this over and over
-again, and plot a histogram of these sample standard deviations, what I
-have is the \emph{sampling distribution of the standard deviation}. I've
-plotted this distribution in Figure \ref{fig:sampdistsd}. Even though
-the true population standard deviation is 15, the average of the
-\emph{sample} standard deviations is only 8.5. Notice that this is a
-very different result to what we found in Figure \ref{fig:IQsampb} when
-we plotted the sampling distribution of the mean. If you look at that
-sampling distribution, what you see is that the population mean is 100,
-and the average of the sample means is also 100.
-
-Now let's extend the simulation. Instead of restricting ourselves to the
-situation where we have a sample size of \(N=2\), let's repeat the
-exercise for sample sizes from 1 to 10. If we plot the average sample
-mean and average sample standard deviation as a function of sample size,
-you get the results shown in Figure \ref{fig:estimatorbias}. On the left
-hand side (panel a), I've plotted the average sample mean and on the
-right hand side (panel b), I've plotted the average standard deviation.
-The two plots are quite different: \emph{on average}, the average sample
-mean is equal to the population mean. It is an \textbf{\emph{unbiased
-estimator}}, which is essentially the reason why your best estimate for
-the population mean is the sample mean.\footnote{I should note that I'm
-  hiding something here. Unbiasedness is a desirable characteristic for
-  an estimator, but there are other things that matter besides bias.
-  However, it's beyond the scope of this book to discuss this in any
-  detail. I just want to draw your attention to the fact that there's
-  some hidden complexity here.} The plot on the right is quite
-different: on average, the sample standard deviation \(s\) is
-\emph{smaller} than the population standard deviation \(\sigma\). It is
-a \textbf{\emph{biased estimator}}. In other words, if we want to make a
-``best guess'' \(\hat\sigma\) about the value of the population standard
-deviation \(\sigma\), we should make sure our guess is a little bit
-larger than the sample standard deviation \(s\).
-
-The fix to this systematic bias turns out to be very simple. Here's how
-it works. Before tackling the standard deviation, let's look at the
-variance. If you recall from Section \ref{var}, the sample variance is
-defined to be the average of the squared deviations from the sample
-mean. That is: \[
-s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
-\] The sample variance \(s^2\) is a biased estimator of the population
-variance \(\sigma^2\). But as it turns out, we only need to make a tiny
-tweak to transform this into an unbiased estimator. All we have to do is
-divide by \(N-1\) rather than by \(N\). If we do that, we obtain the
-following formula: \[
-\hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2 
-\] This is an unbiased estimator of the population variance \(\sigma\).
-Moreover, this finally answers the question we raised in Section
-\ref{var}. Why did R give us slightly different answers when we used the
-\texttt{var()} function? Because the \texttt{var()} function calculates
-\(\hat\sigma^2\) not \(s^2\), that's why. A similar story applies for
-the standard deviation. If we divide by \(N-1\) rather than \(N\), our
-estimate of the population standard deviation becomes: \[
-\hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2} 
-\] and when we use R's built in standard deviation function
-\texttt{sd()}, what it's doing is calculating \(\hat\sigma\), not
-\(s\).\footnote{Okay, I'm hiding something else here. In a bizarre and
-  counterintuitive twist, since \(\hat\sigma^2\) is an unbiased
-  estimator of \(\sigma^2\), you'd assume that taking the square root
-  would be fine, and \(\hat\sigma\) would be an unbiased estimator of
-  \(\sigma\). Right? Weirdly, it's not. There's actually a subtle, tiny
-  bias in \(\hat\sigma\). This is just bizarre: \(\hat\sigma^2\) is and
-  unbiased estimate of the population variance \(\sigma^2\), but when
-  you take the square root, it turns out that \(\hat\sigma\) is a biased
-  estimator of the population standard deviation \(\sigma\). Weird,
-  weird, weird, right? So, why is \(\hat\sigma\) biased? The technical
-  answer is ``because non-linear transformations (e.g., the square root)
-  don't commute with expectation'', but that just sounds like gibberish
-  to everyone who hasn't taken a course in mathematical statistics.
-  Fortunately, it doesn't matter for practical purposes. The bias is
-  small, and in real life everyone uses \(\hat\sigma\) and it works just
-  fine. Sometimes mathematics is just annoying.}
-
-One final point: in practice, a lot of people tend to refer to
-\(\hat{\sigma}\) (i.e., the formula where we divide by \(N-1\)) as the
-\emph{sample} standard deviation. Technically, this is incorrect: the
-\emph{sample} standard deviation should be equal to \(s\) (i.e., the
-formula where we divide by \(N\)). These aren't the same thing, either
-conceptually or numerically. One is a property of the sample, the other
-is an estimated characteristic of the population. However, in almost
-every real life application, what we actually care about is the estimate
-of the population parameter, and so people always report \(\hat\sigma\)
-rather than \(s\). This is the right number to report, of course, it's
-that people tend to get a little bit imprecise about terminology when
-they write it up, because ``sample standard deviation'' is shorter than
-``estimated population standard deviation''. It's no big deal, and in
-practice I do the same thing everyone else does. Nevertheless, I think
-it's important to keep the two \emph{concepts} separate: it's never a
-good idea to confuse ``known properties of your sample'' with ``guesses
-about the population from which it came''. The moment you start thinking
-that \(s\) and \(\hat\sigma\) are the same thing, you start doing
-exactly that.
-
-To finish this section off, here's another couple of tables to help keep
-things clear:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}\NormalTok{,}
-                   \DataTypeTok{Symbol =} \KeywordTok{c}\NormalTok{(}\StringTok{"$s$"}\NormalTok{, }\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{sigma$"}\NormalTok{, }\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{hat\{}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{sigma\}$"}\NormalTok{, }\StringTok{"$s^2$"}\NormalTok{,}
-                              \StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{sigma^2$"}\NormalTok{, }\StringTok{"$}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{hat\{}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{sigma\}^2$"}\NormalTok{),}
-              \DataTypeTok{What.is.it =} \KeywordTok{c}\NormalTok{(}\StringTok{"Sample standard deviation"}\NormalTok{,}
-                              \StringTok{"Population standard deviation"}\NormalTok{,}
-                              \StringTok{"Estimate of the population standard deviation"}\NormalTok{, }\StringTok{"Sample variance"}\NormalTok{,}
-                              \StringTok{"Population variance"}\NormalTok{,}
-                              \StringTok{"Estimate of the population variance"}\NormalTok{),}
-   \DataTypeTok{Do.we.know.what.it.is =} \KeywordTok{c}\NormalTok{(}\StringTok{"Yes - calculated from the raw data"}\NormalTok{,}
-                              \StringTok{"Almost never known for sure"}\NormalTok{,}
-                              \StringTok{"Yes - but not the same as the sample standard deviation"}\NormalTok{,}
-                              \StringTok{"Yes - calculated from the raw data"}\NormalTok{,}
-                              \StringTok{"Almost never known for sure"}\NormalTok{,}
-                              \StringTok{"Yes -  but not the same as the sample variance"}\NormalTok{)}
-\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{tabular}{l|l|l}
-\hline
-Symbol & What.is.it & Do.we.know.what.it.is\\
-\hline
-\$s\$ & Sample standard deviation & Yes - calculated from the raw data\\
-\hline
-\$\textbackslash{}sigma\$ & Population standard deviation & Almost never known for sure\\
-\hline
-\$\textbackslash{}hat\{\textbackslash{}sigma\}\$ & Estimate of the population standard deviation & Yes - but not the same as the sample standard deviation\\
-\hline
-\$s\textasciicircum{}2\$ & Sample variance & Yes - calculated from the raw data\\
-\hline
-\$\textbackslash{}sigma\textasciicircum{}2\$ & Population variance & Almost never known for sure\\
-\hline
-\$\textbackslash{}hat\{\textbackslash{}sigma\}\textasciicircum{}2\$ & Estimate of the population variance & Yes -  but not the same as the sample variance\\
-\hline
-\end{tabular}
-
-\section{Estimating a confidence interval}\label{ci}
-
-\begin{quote}
-\emph{Statistics means never having to say you're certain} -- Unknown
-origin\footnote{This quote appears on a great many t-shirts and
-  websites, and even gets a mention in a few academic papers (e.g.,
-  \textbackslash{}url\{\url{http://www.amstat.org/publications/jse/v10n3/friedman.html}}
-but I've never found the original source.
-\end{quote}
-
-Up to this point in this chapter, I've outlined the basics of sampling
-theory which statisticians rely on to make guesses about population
-parameters on the basis of a sample of data. As this discussion
-illustrates, one of the reasons we need all this sampling theory is that
-every data set leaves us with a some of uncertainty, so our estimates
-are never going to be perfectly accurate. The thing that has been
-missing from this discussion is an attempt to \emph{quantify} the amount
-of uncertainty that attaches to our estimate. It's not enough to be able
-guess that, say, the mean IQ of undergraduate psychology students is 115
-(yes, I just made that number up). We also want to be able to say
-something that expresses the degree of certainty that we have in our
-guess. For example, it would be nice to be able to say that there is a
-95\% chance that the true mean lies between 109 and 121. The name for
-this is a \textbf{\emph{confidence interval}} for the mean.
-
-Armed with an understanding of sampling distributions, constructing a
-confidence interval for the mean is actually pretty easy. Here's how it
-works. Suppose the true population mean is \(\mu\) and the standard
-deviation is \(\sigma\). I've just finished running my study that has
-\(N\) participants, and the mean IQ among those participants is
-\(\bar{X}\). We know from our discussion of the central limit theorem
-(Section \ref{clt} that the sampling distribution of the mean is
-approximately normal. We also know from our discussion of the normal
-distribution Section \ref{normal} that there is a 95\% chance that a
-normally-distributed quantity will fall within two standard deviations
-of the true mean. To be more precise, we can use the \texttt{qnorm()}
-function to compute the 2.5th and 97.5th percentiles of the normal
-distribution
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{( }\DataTypeTok{p =} \KeywordTok{c}\NormalTok{(.}\DecValTok{025}\NormalTok{, .}\DecValTok{975}\NormalTok{) )}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] -1.959964  1.959964
-\end{verbatim}
-
-Okay, so I lied earlier on. The more correct answer is that 95\% chance
-that a normally-distributed quantity will fall within 1.96 standard
-deviations of the true mean. Next, recall that the standard deviation of
-the sampling distribution is referred to as the standard error, and the
-standard error of the mean is written as SEM. When we put all these
-pieces together, we learn that there is a 95\% probability that the
-sample mean \(\bar{X}\) that we have actually observed lies within 1.96
-standard errors of the population mean. Mathematically, we write this
-as: \[
-\mu - \left( 1.96 \times \mbox{SEM} \right) \ \leq \  \bar{X}\  \leq \  \mu + \left( 1.96 \times \mbox{SEM} \right) 
-\] where the SEM is equal to \(\sigma / \sqrt{N}\), and we can be 95\%
-confident that this is true. However, that's not answering the question
-that we're actually interested in. The equation above tells us what we
-should expect about the sample mean, given that we know what the
-population parameters are. What we \emph{want} is to have this work the
-other way around: we want to know what we should believe about the
-population parameters, given that we have observed a particular sample.
-However, it's not too difficult to do this. Using a little high school
-algebra, a sneaky way to rewrite our equation is like this: \[
-\bar{X} -  \left( 1.96 \times \mbox{SEM} \right) \ \leq \ \mu  \ \leq  \ \bar{X} +  \left( 1.96 \times \mbox{SEM}\right)
-\] What this is telling is is that the range of values has a 95\%
-probability of containing the population mean \(\mu\). We refer to this
-range as a \textbf{\emph{95\% confidence interval}}, denoted
-\(\mbox{CI}_{95}\). In short, as long as \(N\) is sufficiently large --
-large enough for us to believe that the sampling distribution of the
-mean is normal -- then we can write this as our formula for the 95\%
-confidence interval: \[
-\mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
-\] Of course, there's nothing special about the number 1.96: it just
-happens to be the multiplier you need to use if you want a 95\%
-confidence interval. If I'd wanted a 70\% confidence interval, I could
-have used the \texttt{qnorm()} function to calculate the 15th and 85th
-quantiles:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{qnorm}\NormalTok{( }\DataTypeTok{p =} \KeywordTok{c}\NormalTok{(.}\DecValTok{15}\NormalTok{, .}\DecValTok{85}\NormalTok{) )}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] -1.036433  1.036433
-\end{verbatim}
-
-and so the formula for \(\mbox{CI}_{70}\) would be the same as the
-formula for \(\mbox{CI}_{95}\) except that we'd use 1.04 as our magic
-number rather than 1.96.
-
-\subsection{A slight mistake in the
-formula}\label{a-slight-mistake-in-the-formula}
-
-As usual, I lied. The formula that I've given above for the 95\%
-confidence interval is approximately correct, but I glossed over an
-important detail in the discussion. Notice my formula requires you to
-use the standard error of the mean, SEM, which in turn requires you to
-use the true population standard deviation \(\sigma\). Yet, in Section
-@ref(pointestimates I stressed the fact that we don't actually
-\emph{know} the true population parameters. Because we don't know the
-true value of \(\sigma\), we have to use an estimate of the population
-standard deviation \(\hat{\sigma}\) instead. This is pretty
-straightforward to do, but this has the consequence that we need to use
-the quantiles of the \(t\)-distribution rather than the normal
-distribution to calculate our magic number; and the answer depends on
-the sample size. When \(N\) is very large, we get pretty much the same
-value using \texttt{qt()} that we would if we used
-\texttt{qnorm()}\ldots{}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{N <-}\StringTok{ }\DecValTok{10000}   \CommentTok{# suppose our sample size is 10,000}
-\KeywordTok{qt}\NormalTok{( }\DataTypeTok{p =}\NormalTok{ .}\DecValTok{975}\NormalTok{, }\DataTypeTok{df =}\NormalTok{ N}\OperatorTok{-}\DecValTok{1}\NormalTok{)   }\CommentTok{# calculate the 97.5th quantile of the t-dist}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 1.960201
-\end{verbatim}
-
-But when \(N\) is small, we get a much bigger number when we use the
-\(t\) distribution:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{N <-}\StringTok{ }\DecValTok{10}   \CommentTok{# suppose our sample size is 10}
-\KeywordTok{qt}\NormalTok{( }\DataTypeTok{p =}\NormalTok{ .}\DecValTok{975}\NormalTok{, }\DataTypeTok{df =}\NormalTok{ N}\OperatorTok{-}\DecValTok{1}\NormalTok{)   }\CommentTok{# calculate the 97.5th quantile of the t-dist}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 2.262157
-\end{verbatim}
-
-There's nothing too mysterious about what's happening here. Bigger
-values mean that the confidence interval is wider, indicating that we're
-more uncertain about what the true value of \(\mu\) actually is. When we
-use the \(t\) distribution instead of the normal distribution, we get
-bigger numbers, indicating that we have more uncertainty. And why do we
-have that extra uncertainty? Well, because our estimate of the
-population standard deviation \(\hat\sigma\) might be wrong! If it's
-wrong, it implies that we're a bit less sure about what our sampling
-distribution of the mean actually looks like\ldots{} and this
-uncertainty ends up getting reflected in a wider confidence interval.
-
-\subsection{Interpreting a confidence
-interval}\label{interpreting-a-confidence-interval}
-
-The hardest thing about confidence intervals is understanding what they
-\emph{mean}. Whenever people first encounter confidence intervals, the
-first instinct is almost always to say that ``there is a 95\%
-probabaility that the true mean lies inside the confidence interval''.
-It's simple, and it seems to capture the common sense idea of what it
-means to say that I am ``95\% confident''. Unfortunately, it's not quite
-right. The intuitive definition relies very heavily on your own personal
-\emph{beliefs} about the value of the population mean. I say that I am
-95\% confident because those are my beliefs. In everyday life that's
-perfectly okay, but if you remember back to Section \ref{probmeaning},
-you'll notice that talking about personal belief and confidence is a
-Bayesian idea. Personally (speaking as a Bayesian) I have no problem
-with the idea that the phrase ``95\% probability'' is allowed to refer
-to a personal belief. However, confidence intervals are \emph{not}
-Bayesian tools. Like everything else in this chapter, confidence
-intervals are \emph{frequentist} tools, and if you are going to use
-frequentist methods then it's not appropriate to attach a Bayesian
-interpretation to them. If you use frequentist methods, you must adopt
-frequentist interpretations!
-
-Okay, so if that's not the right answer, what is? Remember what we said
-about frequentist probability: the only way we are allowed to make
-``probability statements'' is to talk about a sequence of events, and to
-count up the frequencies of different kinds of events. From that
-perspective, the interpretation of a 95\% confidence interval must have
-something to do with replication. Specifically: if we replicated the
-experiment over and over again and computed a 95\% confidence interval
-for each replication, then 95\% of those \emph{intervals} would contain
-the true mean. More generally, 95\% of all confidence intervals
-constructed using this procedure should contain the true population
-mean. This idea is illustrated in Figure \ref{fig:cirep}, which shows 50
-confidence intervals constructed for a ``measure 10 IQ scores''
-experiment (top panel) and another 50 confidence intervals for a
-``measure 25 IQ scores'' experiment (bottom panel). A bit fortuitously,
-across the 100 replications that I simulated, it turned out that exactly
-95 of them contained the true mean.
-
-The critical difference here is that the Bayesian claim makes a
-probability statement about the population mean (i.e., it refers to our
-uncertainty about the population mean), which is not allowed under the
-frequentist interpretation of probability because you can't
-``replicate'' a population! In the frequentist claim, the population
-mean is fixed and no probabilistic claims can be made about it.
-Confidence intervals, however, are repeatable so we can replicate
-experiments. Therefore a frequentist is allowed to talk about the
-probability that the \emph{confidence interval} (a random variable)
-contains the true mean; but is not allowed to talk about the probability
-that the \emph{true population mean} (not a repeatable event) falls
-within the confidence interval.
-
-I know that this seems a little pedantic, but it does matter. It matters
-because the difference in interpretation leads to a difference in the
-mathematics. There is a Bayesian alternative to confidence intervals,
-known as \emph{credible intervals}. In most situations credible
-intervals are quite similar to confidence intervals, but in other cases
-they are drastically different. As promised, though, I'll talk more
-about the Bayesian perspective in Chapter \ref{bayes}.
-
-\section{Summary}\label{summary}
-
-In this chapter I've covered two main topics. The first half of the
-chapter talks about sampling theory, and the second half talks about how
-we can use sampling theory to construct estimates of the population
-parameters. The section breakdown looks like this:
-
-\begin{itemize}
-\tightlist
-\item
-  Basic ideas about samples, sampling and populations (Section
-  \ref{srs})
-\item
-  Statistical theory of sampling: the law of large numbers (Section
-  \ref{lawlargenumbers}), sampling distributions and the central limit
-  theorem (Section \ref{samplesandclt}).
-\item
-  Estimating means and standard deviations (Section
-  \ref{pointestimates})
-\item
-  Estimating a confidence interval (Section \ref{ci})
-\end{itemize}
-
-As always, there's a lot of topics related to sampling and estimation
-that aren't covered in this chapter, but for an introductory psychology
-class this is fairly comprehensive I think. For most applied researchers
-you won't need much more theory than this. One big question that I
-haven't touched on in this chapter is what you do when you don't have a
-simple random sample. There is a lot of statistical theory you can draw
-on to handle this situation, but it's well beyond the scope of this
-book.
+Este resultado es útil por muchas razones. Nos dice porqué los
+experimentos con un tamaño muestral más grande son más confiables que
+aquellos con muestras pequeñas, además de darnos una fórmula para el
+error estándar que nos permite cuantificar \emph{qué tanto} más
+confiable es ese experimento. Nos dice que porque la distribución
+normal, es\ldots{} \emph{normal}. Cuando hacemos un experimento, muchas
+de las cosas que medimos son en realidad un promedio de muchas otras
+medidas (por ejemplo, la inteligencia ``general'' que mide el CI es un
+promedio de un gran número de habilidades ``específicas''), y cuando eso
+pasa, la cantidad promediada debe seguir una distribución normal. Es por
+esta ley matemática que la distribución normal aparace con tanta
+frecuencia en los datos que recogemos del mundo real.
 
 \bibliography{book.bib,packages.bib}
 

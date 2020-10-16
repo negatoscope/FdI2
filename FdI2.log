@@ -1,28 +1,28 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.10)  15 OCT 2020 19:04
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.16)  16 OCT 2020 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **FdI2.tex
 (./FdI2.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-06> (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf
--dist/tex/latex/base/book.cls
-Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+LaTeX2e <2020-10-01> patch level 1
+L3 programming layer <2020-10-05> xparse <2020-03-03> (c:/Users/Admin/AppData/R
+oaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count164
-\c@chapter=\count165
-\c@section=\count166
-\c@subsection=\count167
-\c@subsubsection=\count168
-\c@paragraph=\count169
-\c@subparagraph=\count170
-\c@figure=\count171
-\c@table=\count172
+\c@part=\count171
+\c@chapter=\count172
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
+\c@figure=\count178
+\c@table=\count179
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\bibindent=\dimen138
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -74,7 +74,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
 y
-Package: amsmath 2020/01/20 v2.17e AMS math features
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
 
@@ -85,52 +85,52 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen135
+\ex@=\dimen139
 ))
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
+\pmbraise@=\dimen140
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count173
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count174
-\leftroot@=\count175
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count176
-\DOTSCASE@=\count177
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count178
-\c@MaxMatrixCols=\count179
+\inf@bad=\count180
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count181
+\leftroot@=\count182
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count183
+\DOTSCASE@=\count184
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count185
+\c@MaxMatrixCols=\count186
 \dotsspace@=\muskip16
-\c@parentequation=\count180
-\dspbrk@lvl=\count181
+\c@parentequation=\count187
+\dspbrk@lvl=\count188
 \tag@help=\toks17
-\row@=\count182
-\column@=\count183
-\maxfields@=\count184
+\row@=\count189
+\column@=\count190
+\maxfields@=\count191
 \andhelp@=\toks18
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
 \@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.st
 y
@@ -159,55 +159,50 @@ r XeLaTeX)
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
 sty
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count185
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count192
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 sty
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-09-06 L3 programming layer (loader) 
+Package: expl3 2020-10-05 L3 programming layer (loader) 
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-xetex.def
-File: l3backend-xetex.def 2020-09-01 L3 backend support: XeTeX
-\g__graphics_track_int=\count186
-\l__pdf_internal_box=\box47
-\g__pdf_backend_object_int=\count187
-\g__pdf_backend_annotation_int=\count188
+File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
+\g__graphics_track_int=\count193
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count194
+\g__pdf_backend_annotation_int=\count195
 ))
-Package: xparse 2020-05-15 L3 Experimental document command parser
+Package: xparse 2020-10-05 L3 Experimental document command parser
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
-xparse-generic.tex
-\l__xparse_current_arg_int=\count189
-\g__xparse_grabber_int=\count190
-\l__xparse_m_args_int=\count191
-\l__xparse_v_nesting_int=\count192
-))
+xparse-generic.tex))
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-
 xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count193
-\l__fontspec_language_int=\count194
-\l__fontspec_strnum_int=\count195
-\l__fontspec_tmp_int=\count196
-\l__fontspec_tmpa_int=\count197
-\l__fontspec_tmpb_int=\count198
-\l__fontspec_tmpc_int=\count199
-\l__fontspec_em_int=\count266
-\l__fontspec_emdef_int=\count267
-\l__fontspec_strong_int=\count268
-\l__fontspec_strongdef_int=\count269
-\l__fontspec_tmpa_dim=\dimen144
-\l__fontspec_tmpb_dim=\dimen145
-\l__fontspec_tmpc_dim=\dimen146
+\l__fontspec_script_int=\count196
+\l__fontspec_language_int=\count197
+\l__fontspec_strnum_int=\count198
+\l__fontspec_tmp_int=\count199
+\l__fontspec_tmpa_int=\count266
+\l__fontspec_tmpb_int=\count267
+\l__fontspec_tmpc_int=\count268
+\l__fontspec_em_int=\count269
+\l__fontspec_emdef_int=\count270
+\l__fontspec_strong_int=\count271
+\l__fontspec_strongdef_int=\count272
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
 cfg)))
@@ -224,12 +219,12 @@ tex
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.t
 ex))
-\XKV@depth=\count270
+\XKV@depth=\count273
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@eu@=\count271
-\c@eu@i=\count272
-\c@mkern=\count273
+\c@eu@=\count274
+\c@eu@i=\count275
+\c@mkern=\count276
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.st
 y
@@ -244,7 +239,7 @@ Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.
 sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdfte
 xcmds.sty
@@ -285,11 +280,11 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoption
 s.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen147
-\Hy@linkcounter=\count274
-\Hy@pagecounter=\count275
+\@linkdim=\dimen151
+\Hy@linkcounter=\count277
+\Hy@pagecounter=\count278
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
 f
@@ -303,7 +298,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count276
+\Hy@SavedSpaceFactor=\count279
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -311,13 +306,13 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count277
+\c@Hy@tempcnt=\count280
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen148
+\XeTeXLinkMargin=\dimen152
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.st
 y
@@ -328,9 +323,9 @@ tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count278
-\Field@Width=\dimen149
-\Fld@charsize=\dimen150
+\Fld@menulength=\count281
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -341,13 +336,15 @@ Package hyperref Info: PDF/A mode OFF on input line 6377.
 LaTeX Info: Redefining \ref on input line 6417.
 LaTeX Info: Redefining \pageref on input line 6421.
 
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegsh
-i.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.
+sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
 )
-\Hy@abspage=\count279
-\c@Item=\count280
-\c@Hfootnote=\count281
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -363,19 +360,21 @@ enc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box48
-\c@Hy@AnnotLevel=\count282
-\HyField@AnnotCount=\count283
-\Fld@listcount=\count284
-\c@bookmark@seq@number=\count285
+\pdfm@box=\box50
+\c@Hy@AnnotLevel=\count285
+\HyField@AnnotCount=\count286
+\Fld@listcount=\count287
+\c@bookmark@seq@number=\count288
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
 unfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/atveryend/atveryen
-d.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx
+.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/un
 iquecounter.sty
@@ -397,7 +396,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 29.
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/polygl
 ossia.sty
-Package: polyglossia 2020/04/08 v1.49 Modern multilingual typesetting with XeLa
+Package: polyglossia 2020/10/09 v1.50 Modern multilingual typesetting with XeLa
 TeX and LuaLaTeX
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecmds/makecmds.
@@ -406,12 +405,16 @@ Package: makecmds 2009/09/03 v1.0a extra command making commands
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2
 e/l3keys2e.sty
-Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2020-10-05 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/filehook/filehook.
 sty
-Package: filehook 2020/02/03 v0.7 Hooks for input files
-)
+Package: filehook 2020/09/29 v0.8a Hooks for input files
+
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/filehook/filehook-
+2020.sty
+Package: filehook-2020 2020/09/29 v0.8a Hooks for input files
+))
 \xpg@normalclass=\XeTeXcharclass1
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-
@@ -491,52 +494,21 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count286
-)
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
-
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
-.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: xetex.def on input line 147.
-
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
-.def
-File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
-))
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
-sty
-Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count287
-\FV@InFile=\read2
-\FV@TabBox=\box49
-\c@FancyVerbLine=\count288
-\FV@StepNumber=\count289
-\FV@OutFile=\write3
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
-y
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip55
-\fb@frw=\dimen151
-\fb@frh=\dimen152
-\FrameRule=\dimen153
-\FrameSep=\dimen154
+\c@NAT@ctr=\count289
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip56
-\LTright=\skip57
-\LTpre=\skip58
-\LTpost=\skip59
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
 \LTchunksize=\count290
 \LTcapwidth=\dimen155
-\LT@head=\box50
-\LT@firsthead=\box51
-\LT@foot=\box52
-\LT@lastfoot=\box53
+\LT@head=\box51
+\LT@firsthead=\box52
+\LT@foot=\box53
+\LT@lastfoot=\box54
 \LT@cols=\count291
 \LT@rows=\count292
 \c@LT@tables=\count293
@@ -566,11 +538,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 )
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
 sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
@@ -579,7 +551,11 @@ ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
-)
+
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
+.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+))
 \Gin@req@height=\dimen169
 \Gin@req@width=\dimen170
 )
@@ -593,9 +569,9 @@ line 40.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.st
 y
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip60
-\thanksmargin=\skip61
-\droptitle=\skip62
+\thanksmarkwidth=\skip59
+\thanksmargin=\skip60
+\droptitle=\skip61
 ) (./FdI2.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
@@ -603,33 +579,32 @@ LaTeX Info: Redefining \ttfamily on input line 20.
 )
 \openout1 = `FdI2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+8.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 138.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -645,16 +620,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 (./FdI2.out) (./FdI2.out)
-\@outlinefile=\write4
-\openout4 = `FdI2.out'.
+\@outlinefile=\write3
+\openout3 = `FdI2.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 138.
-LaTeX Info: Redefining \sffamily on input line 138.
-LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 98.
+LaTeX Info: Redefining \sffamily on input line 98.
+LaTeX Info: Redefining \ttfamily on input line 98.
 [1
 
 
@@ -698,33 +673,33 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `FdI2.toc'.
+\tf@toc=\write4
+\openout4 = `FdI2.toc'.
 
 [3] [4
 
 ]
 Capítulo 1.
 
-Underfull \hbox (badness 1184) in paragraph at lines 169--187
+Underfull \hbox (badness 1184) in paragraph at lines 129--147
 \TU/lmr/m/n/10 los periódicos o en la vida cotidiana, pero pensemos brevemento 
 sobre
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 169--187
+Underfull \hbox (badness 1308) in paragraph at lines 129--147
 \TU/lmr/m/n/10 lo que implica. Una compañía encuestadora ha realizado una encue
 sta,
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 169--187
+Underfull \hbox (badness 2368) in paragraph at lines 129--147
 \TU/lmr/m/n/10 restantes (aproximadamente el 99.998% de los votantes) siguen si
 endo
  []
 
 [5] [6]
-Underfull \hbox (badness 1024) in paragraph at lines 237--240
+Underfull \hbox (badness 1024) in paragraph at lines 197--200
 []\TU/lmr/m/n/10 ¿Qué probabilidad hay de que cinco cartas extraídas de un mazo
 
  []
@@ -739,7 +714,7 @@ Overfull \hbox (25.05122pt too wide) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9]
-Underfull \hbox (badness 1389) in paragraph at lines 430--454
+Underfull \hbox (badness 1389) in paragraph at lines 390--414
 \TU/lmr/m/n/10 la proporción de caras convergerá en el 50%. Tecnicismos matemát
 icos
  []
@@ -748,66 +723,66 @@ File: FdI2_files/figure-latex/frequentistprobability-1.pdf Graphic file (type p
 df)
 <use FdI2_files/figure-latex/frequentistprobability-1.pdf>
 [10] [11]
-Underfull \hbox (badness 3780) in paragraph at lines 509--531
+Underfull \hbox (badness 3780) in paragraph at lines 469--491
 []\TU/lmr/m/n/10 La alternativa a la visión frecuentista, la \TU/lmr/bx/it/10 v
 isión bayesiana \TU/lmr/m/n/10 de la
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 509--531
+Underfull \hbox (badness 1442) in paragraph at lines 469--491
 \TU/lmr/m/n/10 relativamente minoritaria entre los estadísticos, aunque ha ido 
 ganando
  []
 
 [12] [13] [14]
-Overfull \hbox (26.747pt too wide) in alignment at lines 642--647
+Overfull \hbox (26.747pt too wide) in alignment at lines 602--607
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.747pt too wide) in alignment at lines 647--652
+Overfull \hbox (26.747pt too wide) in alignment at lines 607--612
  [] [] [] [] [] [] 
  []
 
 File: FdI2_files/figure-latex/pantsprob-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/pantsprob-1.pdf>
 
-Underfull \hbox (badness 2846) in paragraph at lines 688--692
+Underfull \hbox (badness 2846) in paragraph at lines 648--652
 \TU/lmr/m/n/10 comienzos, es posible construir algunas herramientas matemáticas
  más
  []
 
 [15] [16]
-Underfull \hbox (badness 4805) in paragraph at lines 708--718
+Underfull \hbox (badness 4805) in paragraph at lines 668--678
 []\TU/lmr/m/n/10 Como hemos visto, las distribuciones de probabilidad pueden va
 riar
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 708--718
+Underfull \hbox (badness 1142) in paragraph at lines 668--678
 \TU/lmr/m/n/10 importantes, y de las que hablaremos en esta asignatura son cinc
 o: la
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 746.
+(Font)              <8> on input line 706.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 746.
+(Font)              <6> on input line 706.
 
-Underfull \hbox (badness 1087) in paragraph at lines 735--756
+Underfull \hbox (badness 1087) in paragraph at lines 695--716
 \TU/lmr/m/n/10 Dejaremos que $\OML/lmm/m/it/10 N$ \TU/lmr/m/n/10 denote el núme
 ro de dados que se tiran en nuestro
  []
 
 [17]
-Overfull \hbox (574.73004pt too wide) in paragraph at lines 791--798
+Overfull \hbox (574.73004pt too wide) in paragraph at lines 751--758
  [][] 
  []
 
 File: FdI2_files/figure-latex/binomial1-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/binomial1-1.pdf>
 
-Underfull \hbox (badness 1655) in paragraph at lines 811--826
+Underfull \hbox (badness 1655) in paragraph at lines 771--786
 []\TU/lmr/m/n/10 Para darte una idea de cómo cambia la distribución binomial cu
 ando
  []
@@ -818,7 +793,7 @@ File: FdI2_files/figure-latex/binomial2a-1.pdf Graphic file (type pdf)
 File: FdI2_files/figure-latex/binomial2b-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/binomial2b-1.pdf>
 
-Underfull \hbox (badness 1043) in paragraph at lines 847--855
+Underfull \hbox (badness 1043) in paragraph at lines 807--815
 []\TU/lmr/m/n/10 Si bien la distribución binomial es conceptualmente la distrib
 ución más
  []
@@ -852,13 +827,13 @@ File: FdI2_files/figure-latex/distchi-1.pdf Graphic file (type pdf)
 File: FdI2_files/figure-latex/distt-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/distt-1.pdf>
 
-Underfull \hbox (badness 1796) in paragraph at lines 1194--1201
+Underfull \hbox (badness 1796) in paragraph at lines 1154--1161
 []\TU/lmr/m/n/10 Del mismo modo, podemos obtener una distribución $\OML/lmm/m/i
 t/10 F$ \TU/lmr/m/n/10 al dividir dos
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 1194--1201
+Underfull \hbox (badness 3942) in paragraph at lines 1154--1161
 \TU/lmr/m/n/10 distribuciones chi-cuadrada “escaladas”. Supongamos, por ejemplo
 , que
  []
@@ -867,7 +842,7 @@ Underfull \hbox (badness 3942) in paragraph at lines 1194--1201
 File: FdI2_files/figure-latex/distf-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/distf-1.pdf>
 
-Underfull \hbox (badness 1067) in paragraph at lines 1208--1208
+Underfull \hbox (badness 1067) in paragraph at lines 1168--1168
 []\TU/lmr/m/n/10 Figura 1.17: [][]Distribución F. En este ejemplo hipotético, s
 e compara la
  []
@@ -878,7 +853,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [35] [36]
 Capítulo 2.
 
-Underfull \hbox (badness 1931) in paragraph at lines 1292--1307
+LaTeX Warning: Reference `pointestimates' on page 37 undefined on input line 12
+46.
+
+
+LaTeX Warning: Reference `ci' on page 37 undefined on input line 1246.
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1251--1266
 []\TU/lmr/m/n/10 Antes hemos hablado sobre el proceso de inducción inferencial,
  donde
  []
@@ -886,165 +868,119 @@ Underfull \hbox (badness 1931) in paragraph at lines 1292--1307
 [37
 
 ]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 38 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
+Underfull \hbox (badness 10000) in paragraph at lines 1313--1315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1318
+
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1354--1356
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1356--1359
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1365--1367
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1326
 
  []
 
 File: img/estimation/srs1.png Graphic file (type bmp)
 <img/estimation/srs1.png>
 
-Overfull \hbox (352.23192pt too wide) in paragraph at lines 1378--1378
+Overfull \hbox (352.23192pt too wide) in paragraph at lines 1337--1337
 [][] 
  []
 
-
-Underfull \hbox (badness 1264) in paragraph at lines 1378--1378
-[]\TU/lmr/m/n/10 Figura 2.1: []Simple random sampling without replacement from 
-a finite
- []
-
-[39]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 40 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[40]
+[39] [40]
 File: img/estimation/brs.png Graphic file (type bmp)
 <img/estimation/brs.png>
 
-Overfull \hbox (349.18831pt too wide) in paragraph at lines 1432--1432
+Overfull \hbox (349.18831pt too wide) in paragraph at lines 1391--1391
 [][] 
  []
 
 File: img/estimation/srs2.png Graphic file (type bmp)
 <img/estimation/srs2.png>
 
-Overfull \hbox (356.76027pt too wide) in paragraph at lines 1436--1436
+Overfull \hbox (356.76027pt too wide) in paragraph at lines 1395--1395
 [][] 
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 1464--1464
+Underfull \vbox (badness 1648) has occurred while \output is active []
+
+[41] [42]
+Underfull \hbox (badness 2181) in paragraph at lines 1423--1423
 []\TU/lmr/bx/n/12 La mayoría de las muestras no son muestras
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1466--1474
+Underfull \hbox (badness 1259) in paragraph at lines 1425--1433
 []\TU/lmr/m/n/10 Si miras la lista anterior de posibles poblaciones, te darás c
 uenta que
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[41]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 42 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[42] [43]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 44 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[44]
-Underfull \hbox (badness 1960) in paragraph at lines 1532--1542
+[43]
+Underfull \hbox (badness 1960) in paragraph at lines 1491--1501
 \TU/lmr/m/n/10 estadísticas que podemos utilizar para ajustar estos sesgos que 
 hemos
  []
 
+[44]
+
+LaTeX Warning: Reference `fig:IQdista' on page 45 undefined on input line 1560.
+
+
 [45]
+File: FdI2_files/figure-latex/IQdista-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/IQdista-1.pdf>
+File: FdI2_files/figure-latex/IQdistb-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/IQdistb-1.pdf>
 
-LaTeX Warning: Reference `fig:IQdista' on page 46 undefined on input line 1601.
-
-
-File: FdI2_files/figure-latex/IQdist-1.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/IQdist-1.pdf>
-File: FdI2_files/figure-latex/IQdist-2.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/IQdist-2.pdf>
-
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1611
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1570
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 46 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
 [46]
-File: FdI2_files/figure-latex/IQdist-3.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/IQdist-3.pdf>
+
+LaTeX Warning: Reference `fig:IQdistb' on page 47 undefined on input line 1583.
+
+
+
+LaTeX Warning: Reference `fig:IQdista' on page 47 undefined on input line 1586.
+
+
+
+LaTeX Warning: Reference `pointestimates' on page 47 undefined on input line 15
+98.
+
+
+LaTeX Warning: Reference `ci' on page 47 undefined on input line 1599.
+
 [47]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 48 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
+File: FdI2_files/figure-latex/IQdistc-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/IQdistc-1.pdf>
 [48]
-
-LaTeX Warning: Reference `fig:IQdist' on page 49 undefined on input line 1641.
-
-
-LaTeX Warning: Reference `fig:IQdist' on page 49 undefined on input line 1644.
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 1662--1670
-[]\TU/lmr/m/n/10 En la sección anterior vimos los resultados de un experimento 
-ficticio
+Overfull \hbox (40.62233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
+ \TU/lmr/m/n/10 49
  []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 1662--1670
-\TU/lmr/m/n/10 con un tamaño de muestra de $\OML/lmm/m/it/10 N \OT1/lmr/m/n/10 
-= 100$\TU/lmr/m/n/10 . Los resultados fueron algo
- []
-
-
-LaTeX Warning: Reference `fig:IQdist' on page 49 undefined on input line 1675.
 
 [49]
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 50 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
+Underfull \hbox (badness 1142) in paragraph at lines 1753--1762
+\TU/lmr/m/n/10 pequeñas. Por ejemplo, cuando realizamos el primer experimento c
+on 5
  []
 
 [50]
-
-LaTeX Warning: Reference `tab:replications' on page 51 undefined on input line 
-1756.
-
+File: FdI2_files/figure-latex/sampdistmean-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/sampdistmean-1.pdf>
 
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
@@ -1052,26 +988,12 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
  []
 
 [51]
-Underfull \hbox (badness 1412) in paragraph at lines 1807--1816
-\TU/lmr/m/n/10 pequeñas. Por ejempo, cuando realizamos el primer experimento co
-n 5
+File: img/estimation/sampdistmax.png Graphic file (type bmp)
+<img/estimation/sampdistmax.png>
+
+Overfull \hbox (364.25745pt too wide) in paragraph at lines 1799--1799
+[][] 
  []
-
-File: FdI2_files/figure-latex/sampdistmean-1.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/sampdistmean-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 52 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[52]
-
-LaTeX Warning: Reference `fig:sampdistmax' on page 53 undefined on input line 1
-845.
 
 File: FdI2_files/figure-latex/IQsampa-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/IQsampa-1.pdf>
@@ -1080,47 +1002,71 @@ File: FdI2_files/figure-latex/IQsampb-1.pdf Graphic file (type pdf)
 File: FdI2_files/figure-latex/IQsampc-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/IQsampc-1.pdf>
 
-LaTeX Warning: Reference `fig:cltdemob' on page 53 undefined on input line 1923
-.
+LaTeX Warning: Reference `fig:IQsampc' on page 52 undefined on input line 1848.
 
 
-LaTeX Warning: Reference `fig:cltdemoa' on page 53 undefined on input line 1927
-.
 
+Underfull \hbox (badness 10000) in paragraph at lines 1834--1856
+[][]
+ []
 
-LaTeX Warning: Reference `fig:cltdemoc' on page 53 undefined on input line 1929
-.
-
-
+[52]
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
  \TU/lmr/m/n/10 53
  []
 
-[53]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 54 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[54]
+[53] [54]
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
  \TU/lmr/m/n/10 55
  []
 
 [55]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 56 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
+
+LaTeX Warning: Reference `fig:cltdemo' on page 56 undefined on input line 1863.
+
+
+
+LaTeX Warning: Reference `fig:cltdemob' on page 56 undefined on input line 1871
+.
+
+
+LaTeX Warning: Reference `fig:cltdemoa' on page 56 undefined on input line 1874
+.
+
+
+LaTeX Warning: Reference `fig:cltdemoc' on page 56 undefined on input line 1876
+.
+
+File: FdI2_files/figure-latex/cltdemo-1.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/cltdemo-1.pdf>
+File: FdI2_files/figure-latex/cltdemo-2.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/cltdemo-2.pdf>
+File: FdI2_files/figure-latex/cltdemo-3.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/cltdemo-3.pdf>
+File: FdI2_files/figure-latex/cltdemo-4.pdf Graphic file (type pdf)
+<use FdI2_files/figure-latex/cltdemo-4.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+[][]
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [56]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1946.
-
-Overfull \vbox (1.24997pt too high) detected at line 1976
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
@@ -1128,96 +1074,7 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
  \TU/lmr/m/n/10 57
  []
 
-[57]
-File: FdI2_files/figure-latex/cltdemo-1.pdf Graphic file (type pdf)
-<use FdI2_files/figure-latex/cltdemo-1.pdf>
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 58 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[58] [59]
-
-LaTeX Warning: Reference `studydesign' on page 60 undefined on input line 2087.
-
-
-
-Overfull \hbox (0.40114pt too wide) in paragraph at lines 2108--2125
-[]\TU/lmr/m/n/10 In this example, estimating the unknown poulation parameter is
- straightforward.
- []
-
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 60 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[60]
-Overfull \hbox (38.81006pt too wide) in paragraph at lines 2138--2149
-[][] 
- []
-
-[61]
-
-LaTeX Warning: Reference `fig:sampdistsd' on page 62 undefined on input line 22
-35.
-
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 62 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[62]
-
-LaTeX Warning: Reference `fig:estimatorbias' on page 63 undefined on input line
- 2247.
-
-
-LaTeX Warning: Reference `var' on page 63 undefined on input line 2268.
-
-
-LaTeX Warning: Reference `var' on page 63 undefined on input line 2280.
-
-[63]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 64 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[64]
-Overfull \hbox (222.77011pt too wide) in paragraph at lines 2348--2365
-[][] 
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 2391--2404
-[]\TU/lmr/m/n/10 Armed with an understanding of sampling distributions, constru
-cting a
- []
-
-[65]
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 66 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[66] [67]
-
-LaTeX Warning: Reference `fig:cirep' on page 68 undefined on input line 2551.
-
-
-LaTeX Warning: Reference `bayes' on page 68 undefined on input line 2577.
-
-
-Overfull \hbox (46.59453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 68 \TU/lmr/m/sl/10 CAPÍTULO 2.  ESTIMANDO CANTIDADES DESCONOCIDA
-S DE UNA MUESTRA
- []
-
-[68]
+[57] [58]
 No file FdI2.bbl.
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1254,30 +1111,30 @@ braces):
 >  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/totalhyphenmin}  =>  {5}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2614.
-[69]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2614.
-(./FdI2.aux
+
+Overfull \hbox (40.62233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
+ \TU/lmr/m/n/10 59
+ []
+
+[59] (./FdI2.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2614.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2614.
-
 Package rerunfilecheck Info: File `FdI2.out' has not changed.
-(rerunfilecheck)             Checksum: CCDC36C08C79DAF7147A6779B01A6E83;2617.
+(rerunfilecheck)             Checksum: DD720C5D2F9E5F8A5CE44A592BE3F882;2388.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14893 strings out of 481674
- 283585 string characters out of 5931432
- 610787 words of memory out of 5000000
- 31709 multiletter control sequences out of 15000+600000
- 555898 words of font info for 78 fonts, out of 8000000 for 9000
+ 13999 strings out of 479466
+ 266168 string characters out of 5880584
+ 624265 words of memory out of 5000000
+ 33033 multiletter control sequences out of 15000+600000
+ 555866 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,8n,64p,801b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,8n,89p,774b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on FdI2.pdf (69 pages).
+Output written on FdI2.pdf (59 pages).
