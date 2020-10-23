@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.16)  16 OCT 2020 19:03
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.16)  23 OCT 2020 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -853,13 +853,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [35] [36]
 Capítulo 2.
 
-LaTeX Warning: Reference `pointestimates' on page 37 undefined on input line 12
-46.
-
-
-LaTeX Warning: Reference `ci' on page 37 undefined on input line 1246.
-
-
 Underfull \hbox (badness 1931) in paragraph at lines 1251--1266
 []\TU/lmr/m/n/10 Antes hemos hablado sobre el proceso de inducción inferencial,
  donde
@@ -949,19 +942,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [46]
 
-LaTeX Warning: Reference `fig:IQdistb' on page 47 undefined on input line 1583.
+LaTeX Warning: Reference `fig:IQdistb' on page 47 undefined on input line 1587.
 
 
 
-LaTeX Warning: Reference `fig:IQdista' on page 47 undefined on input line 1586.
+LaTeX Warning: Reference `fig:IQdista' on page 47 undefined on input line 1590.
 
-
-
-LaTeX Warning: Reference `pointestimates' on page 47 undefined on input line 15
-98.
-
-
-LaTeX Warning: Reference `ci' on page 47 undefined on input line 1599.
 
 [47]
 File: FdI2_files/figure-latex/IQdistc-1.pdf Graphic file (type pdf)
@@ -972,15 +958,17 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
  \TU/lmr/m/n/10 49
  []
 
-[49]
-Underfull \hbox (badness 1142) in paragraph at lines 1753--1762
+[49] [50]
+Underfull \hbox (badness 1142) in paragraph at lines 1757--1766
 \TU/lmr/m/n/10 pequeñas. Por ejemplo, cuando realizamos el primer experimento c
 on 5
  []
 
-[50]
 File: FdI2_files/figure-latex/sampdistmean-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/sampdistmean-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
@@ -991,7 +979,7 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 File: img/estimation/sampdistmax.png Graphic file (type bmp)
 <img/estimation/sampdistmax.png>
 
-Overfull \hbox (364.25745pt too wide) in paragraph at lines 1799--1799
+Overfull \hbox (364.25745pt too wide) in paragraph at lines 1803--1803
 [][] 
  []
 
@@ -1002,13 +990,16 @@ File: FdI2_files/figure-latex/IQsampb-1.pdf Graphic file (type pdf)
 File: FdI2_files/figure-latex/IQsampc-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/IQsampc-1.pdf>
 
-LaTeX Warning: Reference `fig:IQsampc' on page 52 undefined on input line 1848.
+LaTeX Warning: Reference `fig:IQsampc' on page 52 undefined on input line 1852.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1834--1856
+Underfull \hbox (badness 10000) in paragraph at lines 1838--1860
 [][]
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [52]
 Overfull \hbox (40.62233pt too wide) has occurred while \output is active
@@ -1024,21 +1015,25 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
 
 [55]
 
-LaTeX Warning: Reference `fig:cltdemo' on page 56 undefined on input line 1863.
+LaTeX Warning: Reference `fig:cltdemo' on page 56 undefined on input line 1867.
 
 
 
-LaTeX Warning: Reference `fig:cltdemob' on page 56 undefined on input line 1871
+LaTeX Warning: Reference `fig:cltdemob' on page 56 undefined on input line 1875
 .
 
 
-LaTeX Warning: Reference `fig:cltdemoa' on page 56 undefined on input line 1874
+LaTeX Warning: Reference `fig:cltdemoa' on page 56 undefined on input line 1878
 .
 
 
-LaTeX Warning: Reference `fig:cltdemoc' on page 56 undefined on input line 1876
+LaTeX Warning: Reference `fig:cltdemoc' on page 56 undefined on input line 1880
 .
 
+
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
+[56]
 File: FdI2_files/figure-latex/cltdemo-1.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/cltdemo-1.pdf>
 File: FdI2_files/figure-latex/cltdemo-2.pdf Graphic file (type pdf)
@@ -1048,24 +1043,21 @@ File: FdI2_files/figure-latex/cltdemo-3.pdf Graphic file (type pdf)
 File: FdI2_files/figure-latex/cltdemo-4.pdf Graphic file (type pdf)
 <use FdI2_files/figure-latex/cltdemo-4.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+Underfull \hbox (badness 10000) in paragraph at lines 1886--1890
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+Underfull \hbox (badness 10000) in paragraph at lines 1886--1890
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1882--1886
+Underfull \hbox (badness 10000) in paragraph at lines 1886--1890
 []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1074,7 +1066,97 @@ Overfull \hbox (40.62233pt too wide) has occurred while \output is active
  \TU/lmr/m/n/10 57
  []
 
-[57] [58]
+[57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[58]
+Overfull \hbox (40.62233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
+ \TU/lmr/m/n/10 59
+ []
+
+[59]
+Underfull \hbox (badness 1354) in paragraph at lines 1977--1994
+\TU/lmr/m/n/10 Calculamos la media muestral, y utilizo este mismo resultado com
+o el
+ []
+
+[60]
+Overfull \hbox (50.85007pt too wide) in paragraph at lines 1995--2006
+[][] 
+ []
+
+[61]
+File: img/estimation/samplingDistSampleSD.png Graphic file (type bmp)
+<img/estimation/samplingDistSampleSD.png>
+
+Overfull \hbox (154.02365pt too wide) in paragraph at lines 2077--2077
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 107.94298pt on input line 2078.
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 2080--2090
+\TU/lmr/m/n/10 distribuciones estándar \TU/lmr/m/it/10 muestrales \TU/lmr/m/n/1
+0 es de tan sólo 8.5 (puedes ver esta
+ []
+
+[62] [63]
+File: img/estimation/biasMeanSD.png Graphic file (type bmp)
+<img/estimation/biasMeanSD.png>
+
+Overfull \hbox (805.76175pt too wide) in paragraph at lines 2112--2112
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 95.99411pt on input line 2113.
+
+
+Overfull \hbox (204.79005pt too wide) in paragraph at lines 2137--2148
+[][] 
+ []
+
+
+Underfull \vbox (badness 2020) has occurred while \output is active []
+
+[64] [65] [66]
+Underfull \hbox (badness 1014) in paragraph at lines 2209--2215
+\TU/lmr/m/n/10 Es imporante aclarar que no hay nada de especial en el número 1.
+96;
+ []
+
+[67]
+Underfull \hbox (badness 2894) in paragraph at lines 2268--2283
+[]\TU/lmr/m/n/10 Revisemos el concepto de probabilidad frecuentista: para poder
+ hacer
+ []
+
+File: img/estimation/confIntReplicated.png Graphic file (type bmp)
+<img/estimation/confIntReplicated.png>
+
+Overfull \hbox (433.06409pt too wide) in paragraph at lines 2284--2297
+[]\TU/lmr/m/n/10 \begin{figure} []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[68] [69] [70]
+Underfull \hbox (badness 1742) in paragraph at lines 2355--2366
+[]\TU/lmr/m/n/10 Para resolver el problema con la desviación estándar $\OML/lmm
+/m/it/10 ^^[$ \TU/lmr/m/n/10 contamos con
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 2379--2384
+\TU/lmr/m/n/10 podemos usar la teoría de muestreo para construir estimadores de
+ los
+ []
+
+[71]
 No file FdI2.bbl.
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1111,30 +1193,24 @@ braces):
 >  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/totalhyphenmin}  =>  {5}.
-
-Overfull \hbox (40.62233pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 2.3.  DISTRIBUCIONES MUESTRALES Y EL TEOREMA DEL LÍMITE CENTRAL
- \TU/lmr/m/n/10 59
- []
-
-[59] (./FdI2.aux
+[72] (./FdI2.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
 Package rerunfilecheck Info: File `FdI2.out' has not changed.
-(rerunfilecheck)             Checksum: DD720C5D2F9E5F8A5CE44A592BE3F882;2388.
+(rerunfilecheck)             Checksum: C8A78AEC52E36AF37FBF791AA7F91046;2977.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13999 strings out of 479466
- 266168 string characters out of 5880584
- 624265 words of memory out of 5000000
- 33033 multiletter control sequences out of 15000+600000
+ 14041 strings out of 479466
+ 267532 string characters out of 5880584
+ 626534 words of memory out of 5000000
+ 33072 multiletter control sequences out of 15000+600000
  555866 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 81i,8n,89p,774b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,8n,89p,774b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on FdI2.pdf (59 pages).
+Output written on FdI2.pdf (72 pages).

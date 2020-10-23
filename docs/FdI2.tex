@@ -90,7 +90,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-10-16}
+    \date{2020-10-23}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -1568,6 +1568,10 @@ toda la población. Es decir, decimos que la media de la población
 \includegraphics{FdI2_files/figure-latex/IQdista-1.pdf}
 \includegraphics{FdI2_files/figure-latex/IQdistb-1.pdf}
 
+\begin{verbatim}
+## [1] "n= 10 mean= 105.604149145068 sd= 9.38271457854891"
+\end{verbatim}
+
 Supongamos que hacemos un experimento. Seleccionamos 100 personas al
 azar para que elaboren nuestro test de CI, lo cual me dará una muestra
 aleatoria de la población. Mi muestra consistirá en una serie de números
@@ -1931,6 +1935,469 @@ promedio de un gran número de habilidades ``específicas''), y cuando eso
 pasa, la cantidad promediada debe seguir una distribución normal. Es por
 esta ley matemática que la distribución normal aparace con tanta
 frecuencia en los datos que recogemos del mundo real.
+
+\section{Estimando parámetros poblacionales}\label{pointestimates}
+
+En todos los ejemplos anteriores sobre el CI, hemos asumido que
+conocíamos los parámetros poblacionales. Los tests que miden el CI están
+\emph{diseñados} para tener una media de 100 y una desviación estándar
+de 15: cuando se estudia el CI en una población, se obtienen datos de
+una muestra muy grande y después se ``ajustan'' los resultados de forma
+que la media sea de 100. Esto nos sirve para recordar que una media es
+representativa únicamente de su población. En ocasiones podremos
+encontrar ``normas'' que permiten aplicar esos parámetros en otras
+poblaciones diferentes (por ejemplo, grupos de edad diferente,
+nacionalidades, etc.).
+
+Supongamos que ahora queremos explorar el efecto que tiene la
+contaminación ambiental en el rendimiento académico a través del CI.
+Para ello obtendremos y compararemos los puntajes de CI de estudiantes
+de una ciudad con altos índices de contaminación -Albacete- y otra con
+baja contaminación ambiental -Vitoria- (evidentemente, existen muchos
+otros factores que pueden influir en el puntaje final de CI).
+Independientemente de la ciudad que escojamos, no podemos \emph{asumir}
+que la media de su población es de 100. No se ha creado una ``norma''
+que se aplique al nivel de contaminación ambiental de las ciudades y su
+relación con el CI. Por ello, tendremos que \textbf{\emph{estimar}} los
+parámetros de la población a partir de una muestra.
+
+\subsection{Estimando la media
+poblacional}\label{estimando-la-media-poblacional}
+
+Supongamos que vamos a Albacete y conseguimos los puntajes de CI de una
+muestra de 100 amables albaceteños. Obtenemos que el puntaje medio de
+esas personas es de \(\bar{X}=98.5\). Entonces, ¿cuál la media real del
+CI para la población entera de Albacete? Evidentemente, no conocemos la
+respuesta a esa pregunta. Podría ser \(97.2\), pero también \(103.5\).
+Nuestra muestra no es lo suficientemente grande como para darnos una
+respuesta definitiva. Sin embargo, si tuviera que apostar, diría que es
+\(98.5\). Esta es la esencia de la estimación estadística: dar tu mejor
+predicción.
+
+En este ejemplo, estimar este parámetro de la población es muy sencillo.
+Calculamos la media muestral, y utilizo este mismo resultado como el
+\textbf{\emph{estimador de la media poblacional}}. En la siguiente
+sección explicaré la justificación estadística para esta respuesta que
+parece intuitiva. Por lo pronto, lo que debes reconocer es que,
+conceptualmente, la media muestral y el estimador de la media
+poblacional son cosas diferentes. Un estadístico muestral es una
+descripción de los datos, mientras que un estimador es una predicción
+sobre la población. Con esto en mente, los estadísticos utilizan una
+notación diferente para referirse a cada una de ellas. Así, mientras que
+la media poblacional se denota como \(\mu\), el estimador de la media
+poblacional utiliza \(\hat\mu\) (recuerda que para referirnos a la media
+muestral usamos \(\bar{X}\)). Sin embargo, en muestras simples
+aleatorias, el estimador de la media poblacional es idéntico a la media
+muestral: si obtenemos una media muestral de \(\bar{X} = 98.5\),
+entonces mi estimador de la media poblacional será también de
+\(\hat\mu = 98.5\). Esta tabla nos ayudará a guardar el registro:
+
+\begin{tabular}{l|l|l}
+\hline
+Simbolo & Valor & Lo.conocemos\\
+\hline
+\$\textbackslash{}bar\{X\}\$ & Media muestral & Sí, lo calculamos a partir de datos\\
+\hline
+\$\textbackslash{}mu\$ & Media poblacional & Casi nunca\\
+\hline
+\$\textbackslash{}hat\{\textbackslash{}mu\}\$ & Estimador de la media poblacional & Sí, idéntico a la media muestral\\
+\hline
+\end{tabular}
+
+\subsection{Estimando la desviación estándar
+poblacional}\label{estimando-la-desviacion-estandar-poblacional}
+
+De momento, la estimación parece algo sencillo, por lo que te
+preguntarás porqué te hecho leer todo eso sobre la teoría de muestreo.
+En el caso de la media, nuestro estimador de la media poblacional
+\(\hat\mu\) resulta ser idéntico a la media muestral \(\bar{X}\). Sin
+embargo, esto no aplica para todos los estadísticos muestrales. Como
+ejemplo, veamos como se construye el \textbf{\emph{estimador de la
+desviación estándar poblacional}}, cuya notación es \(\hat\sigma\). Si
+seguimos el mismo razonamiento que con el estimador de la media
+poblacional \(\hat\mu\), cogeríamos a la desviación estándar muestral
+como nuestro estimador. Esto nos dará una respuesta aproximadamente
+correcta, pero no del todo.
+
+Veamos porqué. Supongamos que tenemos una muestra de puntajes de CI que
+contiene una única observación. Este único puntaje es de 99, por lo que
+tendremos la siguiente muestra:
+
+\begin{verbatim}
+99
+\end{verbatim}
+
+Esta es una muestra perfectamente legítima, aunque tenga un tamaño de
+muestra de \(N=1\). Esta muestra tiene una media de 99, y al no haber
+ninguna otra observación en esta muestra, no existe dispersión de datos
+y por lo tanto tenemos una desviación estándar muestral de 0. Como
+descripción de una \emph{muestra} esto es válido: la muestra contiene
+una sola observación y por lo tanto no hay variabilidad o dispersión
+dentro de la muestra. En este caso, decir que tenemos una desviación
+estándar muestral de \(s = 0\) es correcto. Pero si utilizamos este
+valor como estimador de la desviación estándar \emph{poblacional} parece
+no tener sentido. No vemos variabilidad en esta \emph{muestra}
+simplemente porque ¡la muestra es tan pequeña que no puede mostrar
+variabilidad! Por lo tanto, si tenemos un tamaño muestral de \(N=1\),
+``no tenemos ni idea'' del estimador de la desviación estándar
+poblacional.
+
+Observa como en este caso \emph{no} has tenido la misma intuición que
+con la media muestral y su estimador. Aunque tengamos una media de 99 a
+partir de una única observación, es un valor \emph{plausible}, y nos
+permite al menos, hacer una predicción.
+
+Vamos a dar un paso más en este ejemplo. Supongamos que ahora recolecto
+una segunda observación. Mi muestra tiene ahora \(N=2\) puntajes de CI,
+que son los siguientes:
+
+\begin{verbatim}
+99, 101
+\end{verbatim}
+
+Esta vez, la muestra es lo \emph{suficientemente} grande para que
+podamos observar algo de variabilidad en ella: dos observaciones es el
+número mínimo necesario para observar cualquier variabilidad. Para esta
+nueva muestra, la media muestral es de \(\bar{X}=100\), y su desviación
+estándar es de \(s=1\). ¿Qué intuiciones o suposiciones podemos hacer de
+la población? Nuevamente, la mejor predicción que podemos hacer es con
+la media muestral: si tuviéramos que adivinar, diríamos que la media
+poblacional es de 100. ¿Y que hay de la desviación estándar? Aquí es un
+poco más complicado. La desviación estándar muestral está basada
+únicamente en dos observaciones, y es probable que con esto no hemos
+dado a la población ``suficiente oportunidad'' para mostrar cual es su
+variabilidad real. No es que simplemente sospechemos que utilizar este
+valor como estimador sea un \emph{error}: después de todo, con dos
+observaciones esperamos que \emph{esté} equivocado en cierto grado. El
+problema es que este error sea \emph{sistemático}. Específicamente,
+sospechamos que la desviación estándar muestral sea menor que desviación
+estándar poblacional.
+
+\begin{figure}
+\includegraphics[width=9.65in]{img/estimation/samplingDistSampleSD} \caption{Distribución muestral de la desviación estándar del experimento con "dos puntajes de CI". La media real poblacional es de 15 (línea punteada), pero como puedes ver en el histograma, la mayor parte de los experimentos producirán un valor de desviación estándar muestral mucho más pequeño. En promedio, este experimento daría como resultado una desviación estándar muestral de sólo 8.5, muy por debajo del valor real. En otras palabras, la desviación estándar muestral es un estimador *sesgado* de la desviación estándar poblacional.}\label{fig:sampdistsd}
+\end{figure}
+
+Aunque esta intuición pueda ser correcta, sería importante poder
+demostrarla. Si calculamos \emph{la distribución muestral de la
+desviación estándar} para nuestro experimento de \(N=2\) puntajes de CI,
+veremos que el promedio de esas distribuciones estándar
+\emph{muestrales} es de tan sólo 8.5 (puedes ver esta distribución en la
+Figura \ref{fig:sampdistsd}), muy por debajo de la desviación estándar
+poblacional de 15. Observa que esta distribución es muy diferente a la
+distribución muestral de la media que vimos en la Figura
+\ref{fig:IQsampb}. En ella, la media poblacional es de 100, y el
+promedio de las medias muestrales también es de 100.
+
+Ahora extendamos un poco más esta simulación. En lugar de limitarnos a
+calcular la distribución muestral de la desviación de muestras de tamaño
+\(N=2\), repitamos este ejercicio con tamaños muestrales del 1 al 10. Si
+graficamos como cambia el promedio de las medias muestrales y las
+desviaciones estándar muestrales en función del tamaño muestral,
+obtendremos lo que se enseña en la Figura \ref{fig:estimatorbias}. En la
+parte izquierda (a) vemos graficada los promedios de las medias
+muestrales y en la parte izquierda los promedios de las desviaciones
+estándar. Ambas gráficas son diferentes: \emph{en promedio}, la media
+muestral es igual a la media poblacional. Esto lo convierte en un
+\textbf{\emph{estimador insesgado}}, y es el motivo por el cual la media
+muestral es el mejor estimador de la media poblacional. En la parte
+derecha (b), vemos una gráfica distinta: \emph{en promedio}, la
+desviación estándar muestral \(s\) es \emph{menor} que la desviación
+estándar poblacional \(\sigma\). Esto lo convierte en un
+\textbf{\emph{estimador sesgado}}. En otras palabras, si queremos hacer
+nuestra mejor ``predicción'' \(\hat\sigma\) del valor de la desviación
+estándar poblacional \(\sigma\), podríamos hacerlo aumentando el tamaño
+de la desviación estándar muestral \(s\).
+
+\begin{figure}
+\includegraphics[width=22.4in]{img/estimation/biasMeanSD} \caption{Demostración del hecho de que la media muestral es un estimador insesgado de la media poblacional (a), mientras que la desviación estándar es un estimador sesgado de la desviación estándar poblacional (b). *En promedio*, la media muestral es 100, independientemente del tamaño muestral (a). Sin embargo, la desviación estándar muestral es sistemáticamente menor que la desviación estándar poblacional (b), sobre todo con tamaños de muestra pequeños.}\label{fig:estimatorbias}
+\end{figure}
+
+Arreglar este error sistemático es muy sencillo. Primero, recordemos la
+fórmula de la desviación estándar poblacional: \[
+\sigma = \sqrt\frac{\sum_{i=1}^N (X_i - \bar{X})^2}{N} 
+\] Sólo hace falta un pequeño cambio para corregir ese error
+sistemático. Lo único que tenemos que hacer dividir por \(N-1\) en lugar
+de por \(N\). Si lo hacemos, obtendremos la siguiente fórmula: \[
+\hat\sigma = \sqrt\frac{\sum_{i=1}^N (X_i - \bar{X})^2}{N-1} 
+\] Un último apunte: en la práctica, mucha gente se refiere a
+\(\hat{\sigma}\) (esta última fórmula) como la desviación estándar
+\emph{muestral}. Técnicamente, esto es incorrecto: en la desviación
+estándar \emph{muestral} se divide únicamente por \(N\). Y es que no son
+lo mismo, ni conceptualmente ni numéricamente. Uno es una propiedad de
+una muestra, mientras que el otro es una característica estimada de la
+población. Sin embargo, lo normal es que nos interesemos por calcular el
+estimador de la población, por lo que solemos utilizar \(\hat\sigma\) en
+lugar de \(s\). Quizás esta imprecisión se deba a que es más fácil
+escribir ``desviación estándar muestral'' que ``estimador de la
+desviación estándar poblacional''. En la práctica, no suele haber mucha
+diferencia, sin embargo, es importante separar ambos \emph{conceptos}:
+no debemos confundir las ``características conocidas de tu muestra'' con
+las ``predicciones acerca de la población''.
+
+\begin{tabular}{l|l|l}
+\hline
+Simbolo & Valor & Lo.sabemos\\
+\hline
+\$s\$ & Desviación estándar muestral & Sí, lo calculamos a partir de datos\\
+\hline
+\$\textbackslash{}sigma\$ & Desviación estándar poblacional & Casi nunca\\
+\hline
+\$\textbackslash{}hat\{\textbackslash{}sigma\}\$ & Estimador de la desviación estándar poblacional & Sí, pero no es igual a la desviación estándar muestral\\
+\hline
+\end{tabular}
+
+\section{Estimando un intervalo de confianza}\label{ci}
+
+Hasta este punto en esta 2ª Unidad, hemos revisado los conceptos básicos
+de la teoría de muestreo que los estadísticos utilizan para hacer
+predicciones sobre los parámetros poblacionales a partir de una muestra
+de datos. Una de las razones por las cuales necesitamos de esta teoría
+de muestro es que cada conjunto de datos nos deja con un cierto grado de
+incertidumbre, por lo que nuestros estimadores nunca serán precisos a la
+perfección. Sin embargo, nosotros somos capaces de \emph{cuantificar}
+esa incertidumbre que va implícita en nuestros estimadores. No basta con
+predecir que el CI medio de mi muestra de estudiantes es de 105; también
+podemos expresar el grado de certeza que tenemos sobre esa predicción.\\
+Nos gustaría, por ejemplo, decir que tenemos un 95\% de probabilidad de
+que un rango de valores contenga la media real. Esta herramienta existe
+y recibe el nombre de \textbf{\emph{intervalo de confianza}} de la
+media.
+
+Como ya conocemos y entendemos como funcionan las distribuciones
+muestrales, construir un intervalo de confianza resulta relativamente
+sencillo. Supongamos que la media real poblacional es \(\mu\) y la
+desviación estándar es \(\sigma\). Hemos terminado un estudio que
+incluye a \(N\) participantes, y el CI medio de esos participantes es de
+\(\bar{X}\). Por nuestra discusión sobre teorema del límite central
+(Sección \ref{clt}), sabemos que la distribución muestral de la media es
+aproximadamente normal. También sabemos por nuestra discusión sobre la
+distribución normal (Sección \ref{normal}) que existe un 95\% de
+probabilidad de que una cantidad normalmente distribuida caiga dentro de
+dos desviaciones estándar alrededor de la media real (es decir, entre
+los percentiles 2.5 y 97.5). Aunque si vamos al detalle (con la ayuda de
+nuestra tabla z), vemos que no son dos desviaciones estándar
+exactamente, sino 1.96, que es el número que utilizaremos de aquí en
+adelante.
+
+Ahora, recordemos que cuando hablamos de la desviación estándar de una
+distribución muestral, nos estamos refiriendo al error estándar, en este
+caso, de la media (SEM). Si juntamos todos estos elementos, podemos
+decir que existe una probabilidad del 95\% de que la media muestral
+\(\bar{X}\) caiga dentro de 1.96 desviaciones estándar de la media
+poblacional. Matemáticamente lo podemos expresar de la siguiente forma:
+\[
+\mu - \left( 1.96 \times \mbox{SEM} \right) \ \leq \  \bar{X}\  \leq \  \mu + \left( 1.96 \times \mbox{SEM} \right) 
+\] donde el error estándar (SEM) es igual a \(\sigma / \sqrt{N}\). Sin
+embargo, esto no responde a nuestra pregunta original. La ecuación
+anterior nos dice lo que podemos esperar de la media muestral, dado que
+conocemos los parámetros poblacionales. En cambio, lo que nosotros
+\emph{queremos} saber es justo lo contrario: queremos conocer qué creer
+de los parámetros poblacionales, dado lo observado a partir de una
+muestra. Por lo tanto, podemos aplicar nuestros conocimientos de álgebra
+y despejar esta ecuación de forma que nos de la respuesta que buscamos:
+\[
+\bar{X} -  \left( 1.96 \times \mbox{SEM} \right) \ \leq \ \mu  \ \leq  \ \bar{X} +  \left( 1.96 \times \mbox{SEM}\right)
+\] Lo que esta nueva ecuación nos dice, es que un rango de valores tiene
+un 95\% de probabilidad de contener la media poblacional \(\mu\). A este
+rango específico lo conocemos como el \textbf{\emph{intervalo de
+confianza de 95\%}}, y se denota como \(\mbox{CI}_{95}\). Así, mientras
+el tamaño de muestra \(N\) sea lo suficientemente grande
+-suficientemente grande para creer que la distribución muestral de la
+media es normal-, entonces podemos escribir nuestra fórmula del
+intervalo de confianza de 95\% de la siguiente forma: \[
+\mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
+\] Es imporante aclarar que no hay nada de especial en el número 1.96;
+simplemente es el multiplicador para un nivel de confianza del 95\% que
+suele ser el más utilizado cuando se calcula un intervalo de confianza.
+Dependiendo de las circunstancias, podemos disminuir o aumentar ese
+nivel de confianza (por ejemplo, un nivel de confianza de 70\% nos da un
+valor de 1.04).
+
+\subsection{¿Qué pasa cuando no conocemos los parámetros
+poblacionales?}\label{que-pasa-cuando-no-conocemos-los-parametros-poblacionales}
+
+La fórmula que hemos utilizado para calcular el intervalo de confianza
+de 95\% es aproximadente correcta. Sin embargo, no hemos explorado un
+detalle importante dentro de esta discusión. La fórmula requiere que
+usemos el error estándar de la media (SEM), que a su vez requiere que
+utilicemos la desviación estándar de la población \(\sigma\). No
+obstante, en la Sección \ref{pointestimates} vimos que, por lo general,
+nosotros no \emph{conocemos} los parámetros poblacionales. Como no
+conocemos el valor verdadero de \(\sigma\), tenemos que usar el
+estimador de la desviación estandar \(\hat{\sigma}\) en su lugar. Esto
+tiene como consecuencia que tenemos que usar los cuantiles de la
+distribución \(t\) en lugar de los de la distribución normal (valores
+\(z\)); y la elección de ese cuantil depende directamente del tamaño
+muestral. Si la \(N\) es muy grande, obtendremos prácticamente el mismo
+valor: para un nivel de confianza del 95\%, una muestra de tamaño
+\(N=10,000\), nos da un valor \(t\) de 1.96. Pero si la \(N\) es pequeña
+obtendremos un valor \(t\) mucho mayor: utilizando el mismo nivel de
+confianza, pero una muestra con \(N=10\), el valor \(t\) es igual a
+2.26.
+
+Un valor más grande nos dice que el intervalo de confianza es más ancho,
+lo cual indica mayor incertidumbre sobre dónde se encuentra la media
+real poblacional \(\mu\). Cuando utilizamos la distribución \(t\) en
+lugar de la distribución normal, obtenemos números más grandes, lo que
+indica un mayor grado de incertidumbre. ¿Y esto a que se debe? Se debe
+simplemente a que el estimador de la desviación estándar poblacional
+\(\hat\sigma\) puede estar equivocado. Si está equivocado, implica que
+estamos un poco menos seguros sobre la forma de la distribución muestral
+de la media\ldots{} y esta incertidumbre se ve reflejada en un intervalo
+de confianza más ancho.
+
+\subsection{Interpretando un intervalo de
+confianza}\label{interpretando-un-intervalo-de-confianza}
+
+Quizás lo más difícil sobre un intervalo de confianza es entender lo que
+en realidad \emph{significa}. Cuando vemos por primera vez un intervalo
+de confianza, el primer instinto es decir ``que existe un probabilidad
+del 95\% de que la media real se encuentre dentro del intervalo de
+confianza''. Sin embargo, esta idea que parece acorde con el sentido
+común, está equivocada. Esta definición confía fuertemente en las
+\emph{creencias} personales sobre el valor de la media poblacional: ``yo
+creo que este valor tiene un 95\% de probabilidad de entrar en este
+rango''. Si recuerdas lo que vimos en la Sección \ref{probmeaning}, te
+darás cuenta que cuando hablamos de creencias personales y confianza,
+estamos hablando de la estadística Bayesiana. Sin embargo, los
+intervalos de confianza \emph{no} son herramientas Bayesianas. Como casi
+todo lo que hemos visto en este curso, los intervalos de confianza son
+herramientas \emph{frecuentistas}, y como tal, debemos adoptar
+interpretaciones frecuentistas.
+
+Revisemos el concepto de probabilidad frecuentista: para poder hacer
+declaraciones de probabilidad, tenemos que referirnos a una serie de
+eventos, y contar las frecuencias de los diferentes tipos de eventos
+(como cuando lanzamos muchas veces una moneda y contamos el número de
+caras y de cruces). Desde esta perspectiva, la interpretación del
+intervalo de confianza de 95\% tendrá que ver con la repetición de
+experimentos o replicación: si replicamos el experimento una y otra vez
+y calculamos el intervalo de confianza del 95\% para cada replicación,
+entonces el 95\% de esos \emph{intervalos} contendrán la media real
+poblacional. Esta idea se ilustra en la Figura \ref{fig:cirep}, que
+muestra 50 intervalos de confianza construidos para un ``experimento que
+mide 10 puntajes de CI'' y otros 50 intervalos de confianza para un
+``experimento que mide 25 puntajes de CI''. En este ejemplo, vemos como
+exactamente el 95\% de los intervalos de confianza contiene a la media
+real.
+
+\textbackslash{}begin\{figure\}
+\includegraphics[width=13.75in]{img/estimation/confIntReplicated}
+\textbackslash{}caption\{Intervalos de confianza de 95\%. En la parte
+superior (a) se muestran 50 replicaciones de un experimento que mide el
+CI de 10 personas. Los puntos indican la localización de la media
+muestral, y las líneas indican el intervalo de confianza de 95\%. En un
+47 de 50 replicaciones, el intervalo de confianza contiene a la media
+real poblacional (i.e.~100), mientras que tres intervalos no la
+contienen (marcados con un asterisco). En la parte inferior (b) se
+muestra una simulación similar, pero con la replicación de un
+experimento que mide el CI de 25 personas. Observa con los intervalos de
+confianza son más pequeños con muestras más grandes.\}\label{fig:cirep}
+\textbackslash{}end\{figure\}
+
+La diferencia clave es que la pretensión Bayesiana es hacer una
+declaración de probabilidad sobre la media poblacional, lo cual no está
+permitido bajo una interpretación de la probilidad frecuentista ya que
+no se puede ``replicar'' una población. Desde el punto de vista
+frecuentista, la media poblacional es fija y no se pueden hacer
+declaraciones de probabilidad sobre ella. Sin embargo, los intervalos de
+confianza sí que son repetibles, y por lo tanto, podemos replicar
+experimentos. Así, un frecuentista puede hablar sobre la probabilidad de
+que el \emph{intervalo de confianza} (una variable aleatoria) contenga
+la media poblacional; pero no puede hablar sobre la probabilidad de que
+la \emph{media real poblacional} (un evento no repetible) caiga dentro
+de un intervalo de confianza.
+
+\section{Estimando el tamaño muestral}\label{samplesize}
+
+Hasta este punto, hemos aprendido a utilizar las herramientas que nos
+permiten reducir el nivel de incertidumbre cuando queremos conocer los
+parámetros de una población a partir de los resultados de una muestra.
+Sabemos estimar un parámetro poblacional y establecer su intervalo de
+confianza. También hemos aprendido, gracias a la ley de los grandes
+números, que el \emph{grado de incertidumbre} depende particularmente
+del tamaño de la muestra: mientras tengamos un mayor tamaño muestral,
+los estimadores se aproximarán más a los parámetros reales poblacionales
+y sus intervalos de confianza serán más estrechos.
+
+Sin embargo, sabemos que en muchas ocasiones no podremos aspirar a un
+tamaño muestral tan grande como los que hemos utilizados en nuestors
+ejemplos. Es habitual que un investigador se vea limitado a recolectar
+una muestra pequeña por motivos económicos, de accesibilidad, prácticos,
+o porque simplemente no tiene el tiempo para ello. Por todo esto, espero
+que entiendas la importancia que tiene calcular el tamaño de una muestra
+que, nos de resultados de los que cuales nos podamos fiar, y a su vez,
+no se convierta en una tarea imposible para el investigador.
+
+Por suerte, calcularlo no es muy complicado y podemos reutilizar los
+conceptos que hemos aprendido en esta Unidad. Para ello, tomemos nuestra
+fórmula del intervalo de confianza de 95\%: \[
+\mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
+\] Si te fijas bien, observarás que está fórmula necesita del tamaño
+muestral \(N\) para poder ser resuelta. Para llegar a ella, podemos
+empezar por separar los elementos que conforman a la fórmula del
+intervalo de confianza (media muestral y margen de error), y quedarnos
+con el \textbf{\emph{margen de error}} (\(ME\)) que es el resultado de
+multiplicar el nivel de confianza (en este caso 1.96), por el error
+estándar: \[
+ME = 1.96 \times \frac{\sigma}{\sqrt{N}} \
+\] A partir de aquí, calcular \(N\) es muy sencillo. Si conocemos el
+resto de elementos que integran la ecuación, podemos despejar \(N\) y
+obtener la siguiente fórmula para el cálculo del \textbf{\emph{tamaño
+muestral}}: \[
+N = \left( 1.96 \times \frac{\sigma}{ME} \right)^2
+\] Al observar esta fórmula, vemos que nos enfrentamos al mismo problema
+que tuvimos al calcular el intervalo de confianza: en muchas ocasiones
+no podremos conocer el valor de la desviación estándar poblacional
+\(\sigma\). Adicionalmente, tampoco sabemos cuál es nuestro margen de
+error (\(ME\)).
+
+Para resolver el problema con la desviación estándar \(\sigma\) contamos
+con dos opciones. Por un lado, podemos utilizar un valor de desviación
+estándar \emph{aproximado}, que puede estar basado en los hallazgos
+encontrados en poblaciones similares a nuestra población de interés, en
+la teoría o puede ser simplemente un cálculo conservador que denote el
+grado de incertidumbre que realmente tenemos sobre esa población. Por
+otro lado, podemos llevar a cabo un \textbf{\emph{estudio piloto}}, en
+el cual recolectemos los datos de una muestra pequeña que nos permitan
+estimar un media \(\bar{X}\) y una desviación estándar muestrales \(s\)
+que después podamos utilizar en el cálculo del tamaño muestral para un
+estudio más grande.
+
+En el caso del margen de error, la solución es un poco más fácil. Así
+como el nivel de confianza que se utiliza con más frecuencia es el del
+95\%, podemos aplicar este mismo criterio para el \(ME\). En
+investigación se suele utilizar un margen de error de entre el 3\% y el
+10\%, dependiendo de la necesidad o importancia de tener resultados más
+o menos precisos. Una buena regla general, es utilizar el \textbf{5\% de
+la media} como margen de error. De esta forma, aseguramos que los
+intervalos de confianza que obtengamos a partir de esa muestra sean
+estrechos y nos permitan esgrimir conclusiones con mayor seguridad.
+
+\section{Resumen}\label{resumen-1}
+
+En esta Unidad hemos cubierto dos grandes temas. En la primera mitad,
+hablamos sobre la teoría de muestreo, y en la segunda hemos visto cómo
+podemos usar la teoría de muestreo para construir estimadores de los
+parámetros poblacionales. El contenido lo podemos organizar en las
+siguientes ideas:
+
+\begin{itemize}
+\tightlist
+\item
+  Ideas básicas sobre las muestras, muestreo y poblaciones (Sección
+  \ref{srs})
+\item
+  Teoría estadística del muestreo: la ley de los grandes números
+  (Sección \ref{lawlargenumbers}), las distribuciones muestrales y el
+  teorema del límite central (Sección \ref{samplesandclt}).
+\item
+  Estimar medias y desviaciones estándar (Sección \ref{pointestimates})
+\item
+  Estimar intervalos de confianza (Sección \ref{ci})
+\item
+  Estimar el tamaño muestral (Sección \ref{samplesize})
+\end{itemize}
 
 \bibliography{book.bib,packages.bib}
 
